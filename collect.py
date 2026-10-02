@@ -80,32 +80,92 @@ def pick(d: dict, keys):
 
 
 # ---------------- 한국투자증권 ----------------
-def kis_token():
+# 접근 토큰은 1일 1회 발급이 원칙이라(자주 발급하면 이용 제한 + 매번 카톡 알림),
+# 발급한 토큰을 암호화해서 GitHub Actions 캐시에 보관하고 20시간 동안 재사용함.
+# 캐시 파일은 저장소에 커밋되지 않고(data/ 밖에 있음), App Secret으로 암호화됨.
+TOKEN_CACHE = Path(".kis_token.enc")
+TOKEN_REUSE_HOURS = 20
+
+
+def _fernet():
+    import base64
+    import hashlib
+
+    from cryptography.fernet import Fernet
+
+    key = base64.urlsafe_b64encode(hashlib.sha256(("kis-token-cache:" + KIS_SECRET).encode()).digest())
+    return Fernet(key)
+
+
+def _load_cached_token():
+    try:
+        if not TOKEN_CACHE.exists():
+            return None
+        data = json.loads(_fernet().decrypt(TOKEN_CACHE.read_bytes()))
+        issued = dt.datetime.fromisoformat(data["issued_at"])
+        if NOW - issued < dt.timedelta(hours=TOKEN_REUSE_HOURS):
+            return data["token"]
+    except Exception as e:
+        log_err("kis token cache read", e)
+    return None
+
+
+def _save_cached_token(token):
+    try:
+        payload = json.dumps({"token": token, "issued_at": NOW.isoformat()}).encode()
+        TOKEN_CACHE.write_bytes(_fernet().encrypt(payload))
+    except Exception as e:
+        log_err("kis token cache write", e)
+
+
+def kis_token(force_new=False):
+    if not force_new:
+        cached = _load_cached_token()
+        if cached:
+            print("kis token: reused cached token")
+            return cached
     r = http.post(
         f"{KIS_BASE}/oauth2/tokenP",
         json={"grant_type": "client_credentials", "appkey": KIS_KEY, "appsecret": KIS_SECRET},
         timeout=20,
     )
     r.raise_for_status()
-    return r.json()["access_token"]
+    token = r.json()["access_token"]
+    _save_cached_token(token)
+    print("kis token: issued new token")
+    return token
+
+
+_token_refreshed = False
 
 
 def kis_get(path, tr_id, params):
-    headers = {
-        "content-type": "application/json; charset=utf-8",
-        "authorization": f"Bearer {_token}",
-        "appkey": KIS_KEY,
-        "appsecret": KIS_SECRET,
-        "tr_id": tr_id,
-        "custtype": "P",
-    }
-    r = http.get(f"{KIS_BASE}{path}", headers=headers, params=params, timeout=20)
-    r.raise_for_status()
-    j = r.json()
-    time.sleep(0.15)  # 초당 호출 제한 대비
-    if j.get("rt_cd") != "0":
-        raise RuntimeError(f"rt_cd={j.get('rt_cd')} msg_cd={j.get('msg_cd')} msg={j.get('msg1')}")
-    return j
+    global _token, _token_refreshed
+    for attempt in range(2):
+        headers = {
+            "content-type": "application/json; charset=utf-8",
+            "authorization": f"Bearer {_token}",
+            "appkey": KIS_KEY,
+            "appsecret": KIS_SECRET,
+            "tr_id": tr_id,
+            "custtype": "P",
+        }
+        r = http.get(f"{KIS_BASE}{path}", headers=headers, params=params, timeout=20)
+        time.sleep(0.15)  # 초당 호출 제한 대비
+        try:
+            j = r.json()
+        except ValueError:
+            r.raise_for_status()
+            raise
+        # 캐시 토큰이 만료·무효면(EGW00121/EGW00123) 딱 한 번만 새로 발급하고 재시도
+        if j.get("msg_cd") in ("EGW00121", "EGW00123") and not _token_refreshed and attempt == 0:
+            _token_refreshed = True
+            _token = kis_token(force_new=True)
+            continue
+        r.raise_for_status()
+        if j.get("rt_cd") != "0":
+            raise RuntimeError(f"rt_cd={j.get('rt_cd')} msg_cd={j.get('msg_cd')} msg={j.get('msg1')}")
+        return j
 
 
 def get_indices():
@@ -181,7 +241,7 @@ def get_ranking():
                     "fid_input_iscd": "0000",
                     "fid_rank_sort_cls_code": sort,
                     "fid_input_cnt_1": "0",
-                    "fid_prc_cls_code": "1",
+                    "fid_prc_cls_code": "1",  # 1=전일 종가 대비 (0은 장중 저가/고가 대비라 순위가 이상해짐)
                     "fid_input_price_1": "",
                     "fid_input_price_2": "",
                     "fid_vol_cnt": "",
