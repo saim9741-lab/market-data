@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T05:24+09:00",
+ "generated_at": "2026-10-03T05:31+09:00",
  "session": "morning",
  "note": "morning=직전 거래일 장마감 기준 + 밤사이 해외/공시, evening=당일 장마감 기준. 등락률 단위는 %. KIS 필드: prpr=현재가/종가, prdy_ctrt=전일대비율, ntby_qty=순매수수량.",
  "indices": {
@@ -1245,6 +1245,13 @@
    },
    "daily": [
     {
+     "stck_bsop_date": "20261002",
+     "ovrs_nmix_prpr": "51176.96",
+     "ovrs_nmix_oprc": "51241.18",
+     "ovrs_nmix_hgpr": "51382.88",
+     "ovrs_nmix_lwpr": "50950.61"
+    },
+    {
      "stck_bsop_date": "20261001",
      "ovrs_nmix_prpr": "50926.56",
      "ovrs_nmix_oprc": "51008.36",
@@ -1271,13 +1278,6 @@
      "ovrs_nmix_oprc": "51648.48",
      "ovrs_nmix_hgpr": "51780.50",
      "ovrs_nmix_lwpr": "51409.65"
-    },
-    {
-     "stck_bsop_date": "20260925",
-     "ovrs_nmix_prpr": "51828.62",
-     "ovrs_nmix_oprc": "51359.70",
-     "ovrs_nmix_hgpr": "51874.94",
-     "ovrs_nmix_lwpr": "51339.24"
     }
    ]
   },
