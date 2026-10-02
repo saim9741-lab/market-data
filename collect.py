@@ -181,7 +181,7 @@ def get_ranking():
                     "fid_input_iscd": "0000",
                     "fid_rank_sort_cls_code": sort,
                     "fid_input_cnt_1": "0",
-                    "fid_prc_cls_code": "0",
+                    "fid_prc_cls_code": "1",
                     "fid_input_price_1": "",
                     "fid_input_price_2": "",
                     "fid_vol_cnt": "",
