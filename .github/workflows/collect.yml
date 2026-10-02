@@ -1,0 +1,56 @@
+name: market-data
+
+on:
+  schedule:
+    # GitHub cron은 UTC 기준. 실행이 5~15분 늦을 수 있어서 브리핑보다 여유 있게 잡음.
+    - cron: "40 21 * * 0-4"   # 한국시간 월~금 06:40 (장전 데이터)
+    - cron: "40 7 * * 1-5"    # 한국시간 월~금 16:40 (장마감 데이터)
+  workflow_dispatch:           # Actions 탭에서 수동 실행용
+    inputs:
+      session:
+        description: "morning 또는 evening"
+        required: true
+        default: "morning"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: market-data
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Collect market data
+        env:
+          KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
+          KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            S="${{ github.event.inputs.session }}"
+          elif [ "${{ github.event.schedule }}" = "40 21 * * 0-4" ]; then
+            S=morning
+          else
+            S=evening
+          fi
+          python collect.py "$S"
+
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "data: $(TZ=Asia/Seoul date +%F_%H%M)"
+          git push
