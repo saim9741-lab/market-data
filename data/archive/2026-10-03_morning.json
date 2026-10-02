@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T05:17+09:00",
+ "generated_at": "2026-10-03T05:24+09:00",
  "session": "morning",
  "note": "morning=직전 거래일 장마감 기준 + 밤사이 해외/공시, evening=당일 장마감 기준. 등락률 단위는 %. KIS 필드: prpr=현재가/종가, prdy_ctrt=전일대비율, ntby_qty=순매수수량.",
  "indices": {
@@ -723,25 +723,18 @@
  "ranking": {
   "up": [
    {
-    "stck_shrn_iscd": "005110",
-    "hts_kor_isnm": "한창",
-    "stck_prpr": "112",
-    "prdy_ctrt": "-91.07",
-    "acml_vol": "10011000"
-   },
-   {
-    "stck_shrn_iscd": "006140",
-    "hts_kor_isnm": "피제이전자",
-    "stck_prpr": "5690",
-    "prdy_ctrt": "29.91",
-    "acml_vol": "1687871"
-   },
-   {
     "stck_shrn_iscd": "069920",
     "hts_kor_isnm": "엑시온그룹",
     "stck_prpr": "1349",
     "prdy_ctrt": "29.96",
     "acml_vol": "1306705"
+   },
+   {
+    "stck_shrn_iscd": "306040",
+    "hts_kor_isnm": "에스제이그룹",
+    "stck_prpr": "1965",
+    "prdy_ctrt": "29.96",
+    "acml_vol": "261141"
    },
    {
     "stck_shrn_iscd": "217590",
@@ -751,11 +744,11 @@
     "acml_vol": "5833870"
    },
    {
-    "stck_shrn_iscd": "011080",
-    "hts_kor_isnm": "형지I&C",
-    "stck_prpr": "450",
-    "prdy_ctrt": "19.36",
-    "acml_vol": "1542507"
+    "stck_shrn_iscd": "006140",
+    "hts_kor_isnm": "피제이전자",
+    "stck_prpr": "5690",
+    "prdy_ctrt": "29.91",
+    "acml_vol": "1687871"
    },
    {
     "stck_shrn_iscd": "100590",
@@ -765,11 +758,25 @@
     "acml_vol": "3905604"
    },
    {
-    "stck_shrn_iscd": "225190",
-    "hts_kor_isnm": "LK삼양",
-    "stck_prpr": "4930",
-    "prdy_ctrt": "15.73",
-    "acml_vol": "4658926"
+    "stck_shrn_iscd": "478340",
+    "hts_kor_isnm": "나라스페이스테크놀로지",
+    "stck_prpr": "17090",
+    "prdy_ctrt": "20.69",
+    "acml_vol": "9505408"
+   },
+   {
+    "stck_shrn_iscd": "011080",
+    "hts_kor_isnm": "형지I&C",
+    "stck_prpr": "450",
+    "prdy_ctrt": "19.36",
+    "acml_vol": "1542507"
+   },
+   {
+    "stck_shrn_iscd": "020150",
+    "hts_kor_isnm": "롯데에너지머티리얼즈",
+    "stck_prpr": "51100",
+    "prdy_ctrt": "18.98",
+    "acml_vol": "1399138"
    },
    {
     "stck_shrn_iscd": "005160",
@@ -779,20 +786,6 @@
     "acml_vol": "7587498"
    },
    {
-    "stck_shrn_iscd": "478340",
-    "hts_kor_isnm": "나라스페이스테크놀로지",
-    "stck_prpr": "17090",
-    "prdy_ctrt": "20.69",
-    "acml_vol": "9505408"
-   },
-   {
-    "stck_shrn_iscd": "250930",
-    "hts_kor_isnm": "예선테크",
-    "stck_prpr": "529",
-    "prdy_ctrt": "13.76",
-    "acml_vol": "90484"
-   },
-   {
     "stck_shrn_iscd": "065530",
     "hts_kor_isnm": "와이어블",
     "stck_prpr": "1518",
@@ -800,11 +793,11 @@
     "acml_vol": "8449322"
    },
    {
-    "stck_shrn_iscd": "480370",
-    "hts_kor_isnm": "씨케이솔루션",
-    "stck_prpr": "2250",
-    "prdy_ctrt": "15.09",
-    "acml_vol": "1034587"
+    "stck_shrn_iscd": "136150",
+    "hts_kor_isnm": "원일티엔아이",
+    "stck_prpr": "12850",
+    "prdy_ctrt": "18.43",
+    "acml_vol": "2656597"
    },
    {
     "stck_shrn_iscd": "073570",
@@ -814,18 +807,11 @@
     "acml_vol": "618437"
    },
    {
-    "stck_shrn_iscd": "123010",
-    "hts_kor_isnm": "MSDI",
-    "stck_prpr": "4165",
-    "prdy_ctrt": "-6.61",
-    "acml_vol": "1248062"
-   },
-   {
-    "stck_shrn_iscd": "020150",
-    "hts_kor_isnm": "롯데에너지머티리얼즈",
-    "stck_prpr": "51100",
-    "prdy_ctrt": "18.98",
-    "acml_vol": "1399138"
+    "stck_shrn_iscd": "263600",
+    "hts_kor_isnm": "덕우전자",
+    "stck_prpr": "5200",
+    "prdy_ctrt": "17.91",
+    "acml_vol": "6628578"
    },
    {
     "stck_shrn_iscd": "101670",
@@ -842,11 +828,18 @@
     "acml_vol": "149975"
    },
    {
-    "stck_shrn_iscd": "002360",
-    "hts_kor_isnm": "SH에너지화학",
-    "stck_prpr": "3325",
-    "prdy_ctrt": "-8.15",
-    "acml_vol": "309229"
+    "stck_shrn_iscd": "039560",
+    "hts_kor_isnm": "다산네트웍스",
+    "stck_prpr": "3005",
+    "prdy_ctrt": "16.02",
+    "acml_vol": "2824451"
+   },
+   {
+    "stck_shrn_iscd": "225190",
+    "hts_kor_isnm": "LK삼양",
+    "stck_prpr": "4930",
+    "prdy_ctrt": "15.73",
+    "acml_vol": "4658926"
    },
    {
     "stck_shrn_iscd": "079190",
@@ -856,27 +849,6 @@
     "acml_vol": "415702"
    },
    {
-    "stck_shrn_iscd": "039560",
-    "hts_kor_isnm": "다산네트웍스",
-    "stck_prpr": "3005",
-    "prdy_ctrt": "16.02",
-    "acml_vol": "2824451"
-   },
-   {
-    "stck_shrn_iscd": "032300",
-    "hts_kor_isnm": "한국파마",
-    "stck_prpr": "8620",
-    "prdy_ctrt": "14.93",
-    "acml_vol": "2024375"
-   },
-   {
-    "stck_shrn_iscd": "001770",
-    "hts_kor_isnm": "SHD",
-    "stck_prpr": "3925",
-    "prdy_ctrt": "-1.88",
-    "acml_vol": "65628"
-   },
-   {
     "stck_shrn_iscd": "105740",
     "hts_kor_isnm": "디케이락",
     "stck_prpr": "11680",
@@ -884,11 +856,11 @@
     "acml_vol": "1705302"
    },
    {
-    "stck_shrn_iscd": "065440",
-    "hts_kor_isnm": "이루온",
-    "stck_prpr": "1619",
-    "prdy_ctrt": "14.82",
-    "acml_vol": "7495262"
+    "stck_shrn_iscd": "900300",
+    "hts_kor_isnm": "오가닉티코스메틱",
+    "stck_prpr": "3000",
+    "prdy_ctrt": "15.38",
+    "acml_vol": "1316898"
    },
    {
     "stck_shrn_iscd": "179530",
@@ -898,32 +870,46 @@
     "acml_vol": "353968"
    },
    {
-    "stck_shrn_iscd": "042000",
-    "hts_kor_isnm": "카페24",
-    "stck_prpr": "20500",
-    "prdy_ctrt": "-3.30",
-    "acml_vol": "1414991"
+    "stck_shrn_iscd": "480370",
+    "hts_kor_isnm": "씨케이솔루션",
+    "stck_prpr": "2250",
+    "prdy_ctrt": "15.09",
+    "acml_vol": "1034587"
    },
    {
-    "stck_shrn_iscd": "054780",
-    "hts_kor_isnm": "키이스트",
-    "stck_prpr": "2225",
-    "prdy_ctrt": "12.37",
-    "acml_vol": "1069278"
+    "stck_shrn_iscd": "032300",
+    "hts_kor_isnm": "한국파마",
+    "stck_prpr": "8620",
+    "prdy_ctrt": "14.93",
+    "acml_vol": "2024375"
    },
    {
-    "stck_shrn_iscd": "412350",
-    "hts_kor_isnm": "레이저쎌",
-    "stck_prpr": "7430",
-    "prdy_ctrt": "9.26",
-    "acml_vol": "833134"
+    "stck_shrn_iscd": "469750",
+    "hts_kor_isnm": "아이비젼웍스",
+    "stck_prpr": "5690",
+    "prdy_ctrt": "14.83",
+    "acml_vol": "904623"
    },
    {
-    "stck_shrn_iscd": "101140",
-    "hts_kor_isnm": "인바이오젠",
-    "stck_prpr": "5230",
-    "prdy_ctrt": "11.75",
-    "acml_vol": "7795"
+    "stck_shrn_iscd": "065440",
+    "hts_kor_isnm": "이루온",
+    "stck_prpr": "1619",
+    "prdy_ctrt": "14.82",
+    "acml_vol": "7495262"
+   },
+   {
+    "stck_shrn_iscd": "200350",
+    "hts_kor_isnm": "아티스트스튜디오",
+    "stck_prpr": "3330",
+    "prdy_ctrt": "14.04",
+    "acml_vol": "178591"
+   },
+   {
+    "stck_shrn_iscd": "250930",
+    "hts_kor_isnm": "예선테크",
+    "stck_prpr": "529",
+    "prdy_ctrt": "13.76",
+    "acml_vol": "90484"
    },
    {
     "stck_shrn_iscd": "067770",
@@ -931,9 +917,30 @@
     "stck_prpr": "1031",
     "prdy_ctrt": "13.55",
     "acml_vol": "108866"
+   },
+   {
+    "stck_shrn_iscd": "072950",
+    "hts_kor_isnm": "빛샘전자",
+    "stck_prpr": "17250",
+    "prdy_ctrt": "12.82",
+    "acml_vol": "9522615"
+   },
+   {
+    "stck_shrn_iscd": "046970",
+    "hts_kor_isnm": "우리로",
+    "stck_prpr": "8340",
+    "prdy_ctrt": "12.55",
+    "acml_vol": "13345572"
    }
   ],
   "down": [
+   {
+    "stck_shrn_iscd": "005110",
+    "hts_kor_isnm": "한창",
+    "stck_prpr": "112",
+    "prdy_ctrt": "-91.07",
+    "acml_vol": "10011000"
+   },
    {
     "stck_shrn_iscd": "005030",
     "hts_kor_isnm": "부산주공",
@@ -949,88 +956,18 @@
     "acml_vol": "973368"
    },
    {
+    "stck_shrn_iscd": "397030",
+    "hts_kor_isnm": "에이프릴바이오",
+    "stck_prpr": "16880",
+    "prdy_ctrt": "-20.75",
+    "acml_vol": "1657247"
+   },
+   {
     "stck_shrn_iscd": "060480",
     "hts_kor_isnm": "국일신동",
     "stck_prpr": "857",
     "prdy_ctrt": "-18.38",
     "acml_vol": "756975"
-   },
-   {
-    "stck_shrn_iscd": "065650",
-    "hts_kor_isnm": "하이퍼코퍼레이션",
-    "stck_prpr": "1360",
-    "prdy_ctrt": "0.74",
-    "acml_vol": "60005"
-   },
-   {
-    "stck_shrn_iscd": "054220",
-    "hts_kor_isnm": "비츠로시스",
-    "stck_prpr": "1703",
-    "prdy_ctrt": "1.37",
-    "acml_vol": "39930"
-   },
-   {
-    "stck_shrn_iscd": "443250",
-    "hts_kor_isnm": "레뷰코퍼레이션",
-    "stck_prpr": "5200",
-    "prdy_ctrt": "0.78",
-    "acml_vol": "3478"
-   },
-   {
-    "stck_shrn_iscd": "357250",
-    "hts_kor_isnm": "미래에셋맵스리츠",
-    "stck_prpr": "1867",
-    "prdy_ctrt": "1.03",
-    "acml_vol": "6937"
-   },
-   {
-    "stck_shrn_iscd": "060900",
-    "hts_kor_isnm": "에이전트AI",
-    "stck_prpr": "1630",
-    "prdy_ctrt": "2.19",
-    "acml_vol": "777648"
-   },
-   {
-    "stck_shrn_iscd": "238200",
-    "hts_kor_isnm": "비피도",
-    "stck_prpr": "2775",
-    "prdy_ctrt": "4.72",
-    "acml_vol": "1759"
-   },
-   {
-    "stck_shrn_iscd": "040160",
-    "hts_kor_isnm": "누리플렉스",
-    "stck_prpr": "6390",
-    "prdy_ctrt": "2.40",
-    "acml_vol": "8384"
-   },
-   {
-    "stck_shrn_iscd": "024890",
-    "hts_kor_isnm": "대원화성",
-    "stck_prpr": "1428",
-    "prdy_ctrt": "-10.19",
-    "acml_vol": "81067"
-   },
-   {
-    "stck_shrn_iscd": "070300",
-    "hts_kor_isnm": "퀀텀레일",
-    "stck_prpr": "605",
-    "prdy_ctrt": "-2.26",
-    "acml_vol": "6453028"
-   },
-   {
-    "stck_shrn_iscd": "032540",
-    "hts_kor_isnm": "TJ미디어",
-    "stck_prpr": "3780",
-    "prdy_ctrt": "0.27",
-    "acml_vol": "9289"
-   },
-   {
-    "stck_shrn_iscd": "367000",
-    "hts_kor_isnm": "플래티어",
-    "stck_prpr": "3580",
-    "prdy_ctrt": "6.87",
-    "acml_vol": "14723"
    },
    {
     "stck_shrn_iscd": "015260",
@@ -1040,67 +977,18 @@
     "acml_vol": "2135456"
    },
    {
-    "stck_shrn_iscd": "035620",
-    "hts_kor_isnm": "바른손이앤에이",
-    "stck_prpr": "608",
-    "prdy_ctrt": "-14.00",
-    "acml_vol": "274915"
-   },
-   {
-    "stck_shrn_iscd": "017390",
-    "hts_kor_isnm": "서울가스",
-    "stck_prpr": "54000",
-    "prdy_ctrt": "-0.37",
-    "acml_vol": "4590"
-   },
-   {
-    "stck_shrn_iscd": "308100",
-    "hts_kor_isnm": "형지글로벌",
-    "stck_prpr": "256",
-    "prdy_ctrt": "1.19",
-    "acml_vol": "1633338"
-   },
-   {
-    "stck_shrn_iscd": "069640",
-    "hts_kor_isnm": "한세엠케이",
-    "stck_prpr": "1429",
-    "prdy_ctrt": "-1.92",
-    "acml_vol": "28902"
-   },
-   {
-    "stck_shrn_iscd": "002780",
-    "hts_kor_isnm": "진흥기업",
-    "stck_prpr": "6630",
-    "prdy_ctrt": "2.00",
-    "acml_vol": "190244"
-   },
-   {
-    "stck_shrn_iscd": "026910",
-    "hts_kor_isnm": "광진실업",
-    "stck_prpr": "2035",
-    "prdy_ctrt": "5.99",
-    "acml_vol": "527897"
-   },
-   {
-    "stck_shrn_iscd": "079160",
-    "hts_kor_isnm": "CJ CGV",
-    "stck_prpr": "5010",
-    "prdy_ctrt": "-0.20",
-    "acml_vol": "218692"
-   },
-   {
-    "stck_shrn_iscd": "900110",
-    "hts_kor_isnm": "딥커머스",
-    "stck_prpr": "5850",
-    "prdy_ctrt": "7.14",
-    "acml_vol": "4183"
-   },
-   {
     "stck_shrn_iscd": "004920",
     "hts_kor_isnm": "씨아이테크",
     "stck_prpr": "7670",
     "prdy_ctrt": "-15.44",
     "acml_vol": "80386"
+   },
+   {
+    "stck_shrn_iscd": "035620",
+    "hts_kor_isnm": "바른손이앤에이",
+    "stck_prpr": "608",
+    "prdy_ctrt": "-14.00",
+    "acml_vol": "274915"
    },
    {
     "stck_shrn_iscd": "084680",
@@ -1110,25 +998,109 @@
     "acml_vol": "153178"
    },
    {
-    "stck_shrn_iscd": "397030",
-    "hts_kor_isnm": "에이프릴바이오",
-    "stck_prpr": "16880",
-    "prdy_ctrt": "-20.75",
-    "acml_vol": "1657247"
-   },
-   {
-    "stck_shrn_iscd": "057030",
-    "hts_kor_isnm": "YBM넷",
-    "stck_prpr": "2120",
-    "prdy_ctrt": "0.95",
-    "acml_vol": "4446"
-   },
-   {
     "stck_shrn_iscd": "486510",
     "hts_kor_isnm": "글로벌테크놀로지",
     "stck_prpr": "14860",
     "prdy_ctrt": "-11.18",
     "acml_vol": "3846646"
+   },
+   {
+    "stck_shrn_iscd": "009620",
+    "hts_kor_isnm": "삼보산업",
+    "stck_prpr": "5110",
+    "prdy_ctrt": "-10.82",
+    "acml_vol": "30985"
+   },
+   {
+    "stck_shrn_iscd": "024890",
+    "hts_kor_isnm": "대원화성",
+    "stck_prpr": "1428",
+    "prdy_ctrt": "-10.19",
+    "acml_vol": "81067"
+   },
+   {
+    "stck_shrn_iscd": "042600",
+    "hts_kor_isnm": "새로닉스",
+    "stck_prpr": "10930",
+    "prdy_ctrt": "-10.04",
+    "acml_vol": "133670"
+   },
+   {
+    "stck_shrn_iscd": "047920",
+    "hts_kor_isnm": "HLB제약",
+    "stck_prpr": "10040",
+    "prdy_ctrt": "-9.96",
+    "acml_vol": "1494727"
+   },
+   {
+    "stck_shrn_iscd": "475830",
+    "hts_kor_isnm": "오름테라퓨틱",
+    "stck_prpr": "21050",
+    "prdy_ctrt": "-9.85",
+    "acml_vol": "541140"
+   },
+   {
+    "stck_shrn_iscd": "0007J0",
+    "hts_kor_isnm": "인벤테라",
+    "stck_prpr": "9720",
+    "prdy_ctrt": "-9.83",
+    "acml_vol": "244945"
+   },
+   {
+    "stck_shrn_iscd": "007110",
+    "hts_kor_isnm": "일신석재",
+    "stck_prpr": "2540",
+    "prdy_ctrt": "-9.29",
+    "acml_vol": "368002"
+   },
+   {
+    "stck_shrn_iscd": "208640",
+    "hts_kor_isnm": "썸에이지",
+    "stck_prpr": "696",
+    "prdy_ctrt": "-9.26",
+    "acml_vol": "330934"
+   },
+   {
+    "stck_shrn_iscd": "354200",
+    "hts_kor_isnm": "엔젠바이오",
+    "stck_prpr": "764",
+    "prdy_ctrt": "-9.16",
+    "acml_vol": "619218"
+   },
+   {
+    "stck_shrn_iscd": "002787",
+    "hts_kor_isnm": "진흥기업2우B",
+    "stck_prpr": "9820",
+    "prdy_ctrt": "-8.99",
+    "acml_vol": "1449"
+   },
+   {
+    "stck_shrn_iscd": "Q570100",
+    "hts_kor_isnm": "한투 일본종합상사TOP5 ETN",
+    "stck_prpr": "20955",
+    "prdy_ctrt": "-8.75",
+    "acml_vol": "4943"
+   },
+   {
+    "stck_shrn_iscd": "439960",
+    "hts_kor_isnm": "코스모로보틱스",
+    "stck_prpr": "7900",
+    "prdy_ctrt": "-8.67",
+    "acml_vol": "6227471"
+   },
+   {
+    "stck_shrn_iscd": "003350",
+    "hts_kor_isnm": "한국화장품제조",
+    "stck_prpr": "15470",
+    "prdy_ctrt": "-8.62",
+    "acml_vol": "936723"
+   },
+   {
+    "stck_shrn_iscd": "418620",
+    "hts_kor_isnm": "E8",
+    "stck_prpr": "430",
+    "prdy_ctrt": "-8.51",
+    "acml_vol": "1240754"
    },
    {
     "stck_shrn_iscd": "009190",
@@ -1138,11 +1110,39 @@
     "acml_vol": "1938032"
    },
    {
-    "stck_shrn_iscd": "418620",
-    "hts_kor_isnm": "E8",
-    "stck_prpr": "430",
-    "prdy_ctrt": "-8.51",
-    "acml_vol": "1240754"
+    "stck_shrn_iscd": "494120",
+    "hts_kor_isnm": "큐리오시스",
+    "stck_prpr": "9830",
+    "prdy_ctrt": "-8.47",
+    "acml_vol": "129611"
+   },
+   {
+    "stck_shrn_iscd": "Q700035",
+    "hts_kor_isnm": "하나 인버스 2X K방산TOP10 ETN",
+    "stck_prpr": "7595",
+    "prdy_ctrt": "-8.38",
+    "acml_vol": "70982"
+   },
+   {
+    "stck_shrn_iscd": "087010",
+    "hts_kor_isnm": "펩트론",
+    "stck_prpr": "130600",
+    "prdy_ctrt": "-8.35",
+    "acml_vol": "212922"
+   },
+   {
+    "stck_shrn_iscd": "240600",
+    "hts_kor_isnm": "유진테크놀로지",
+    "stck_prpr": "860",
+    "prdy_ctrt": "-8.22",
+    "acml_vol": "92680"
+   },
+   {
+    "stck_shrn_iscd": "002360",
+    "hts_kor_isnm": "SH에너지화학",
+    "stck_prpr": "3325",
+    "prdy_ctrt": "-8.15",
+    "acml_vol": "309229"
    }
   ]
  },
@@ -1328,15 +1328,15 @@
   },
   "원/달러 환율": {
    "summary": {
-    "ovrs_nmix_prpr": "1344.2000",
-    "ovrs_nmix_prdy_vrss": "-14.2000",
+    "ovrs_nmix_prpr": "1344.1000",
+    "ovrs_nmix_prdy_vrss": "-14.3000",
     "prdy_ctrt": "-1.05",
     "hts_kor_isnm": "원/달러(KMB)"
    },
    "daily": [
     {
      "stck_bsop_date": "20261002",
-     "ovrs_nmix_prpr": "1344.2000",
+     "ovrs_nmix_prpr": "1344.1000",
      "ovrs_nmix_oprc": "1358.3000",
      "ovrs_nmix_hgpr": "1366.2000",
      "ovrs_nmix_lwpr": "1343.6000"
