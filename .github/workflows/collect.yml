@@ -30,7 +30,15 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install requests
+      - run: pip install requests cryptography
+
+      # 한투 접근 토큰 재사용용 캐시 (암호화된 파일, 저장소에는 커밋 안 됨)
+      - uses: actions/cache@v4
+        with:
+          path: .kis_token.enc
+          key: kis-token-${{ github.run_id }}
+          restore-keys: |
+            kis-token-
 
       - name: Collect market data
         env:
