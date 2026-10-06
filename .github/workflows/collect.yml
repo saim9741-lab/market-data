@@ -2,15 +2,18 @@ name: market-data
 
 on:
   schedule:
-    # GitHub cron은 UTC 기준. 실행이 5~15분 늦을 수 있어서 브리핑보다 여유 있게 잡음.
-    - cron: "40 21 * * 0-4"   # 한국시간 월~금 06:40 (장전 데이터)
-    - cron: "40 7 * * 1-5"    # 한국시간 월~금 16:40 (장마감 데이터)
+    # GitHub cron은 UTC 기준이고, 실행이 수십 분~몇 시간 늦거나 빠질 수 있어서
+    # 브리핑보다 훨씬 이르게 + 두 번씩(재시도) 잡음. 정각(:00)은 혼잡해서 피함.
+    - cron: "13 20 * * 0-4"   # 한국시간 월~금 05:13 (장전 데이터)
+    - cron: "47 20 * * 0-4"   # 한국시간 월~금 05:47 (장전 데이터 재시도)
+    - cron: "17 7 * * 1-5"    # 한국시간 월~금 16:17 (장마감 데이터)
+    - cron: "53 7 * * 1-5"    # 한국시간 월~금 16:53 (장마감 데이터 재시도)
   workflow_dispatch:           # Actions 탭에서 수동 실행용
     inputs:
       session:
-        description: "morning 또는 evening"
-        required: true
-        default: "morning"
+        description: "morning 또는 evening (비우면 한국시간 기준 자동)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -46,12 +49,10 @@ jobs:
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            S="${{ github.event.inputs.session }}"
-          elif [ "${{ github.event.schedule }}" = "40 21 * * 0-4" ]; then
-            S=morning
-          else
-            S=evening
+          S="${{ github.event.inputs.session }}"
+          if [ -z "$S" ]; then
+            H=$(TZ=Asia/Seoul date +%H)
+            if [ "$H" -lt 12 ]; then S=morning; else S=evening; fi
           fi
           python collect.py "$S"
 
@@ -59,6 +60,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash || true
           git add data
           git diff --cached --quiet || git commit -m "data: $(TZ=Asia/Seoul date +%F_%H%M)"
           git push
