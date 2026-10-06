@@ -317,7 +317,8 @@ def get_dart():
         name, report = it.get("corp_name", ""), it.get("report_nm", "")
         if name in watch_names or any(k in report for k in DART_KEYWORDS):
             picked.append({
-                "date": it.get("rcept_dt"), "corp": name, "market": it.get("corp_cls"),
+                "date": it.get("rcept_dt"), "corp": name, "code": (it.get("stock_code") or "").strip(),
+                "market": it.get("corp_cls"),
                 "report": report.strip(), "watch": name in watch_names,
                 "url": f"https://dart.fss.or.kr/dsaf001/main.do?rcpNo={it.get('rcept_no')}",
             })
@@ -326,11 +327,61 @@ def get_dart():
     return {"range": f"{bgn}~{end}", "total_count": total, "filtered_count": len(picked), "filtered": picked[:150]}
 
 
+def get_followup(dart_result):
+    """장마감(evening) 때, 아침에 예측 후보가 될 만한 종목들의 종가를 한꺼번에 받아둠.
+    대상: 오늘 아침 파일·직전 저녁 파일의 등락률 순위(상승·하락 각 30) + 공시 종목(상장사) + EXTRA_CODES.
+    → 저녁 채점 때 '판정불가'를 줄이기 위함."""
+    names = {}
+    # 저장소에 있는 '오늘 아침 파일'과 '직전 거래일 저녁 파일'(=기준선 후보 출처)을 읽음
+    for fname in ("latest_morning.json", "latest_evening.json"):
+        try:
+            fp = Path("data") / fname
+            if not fp.exists():
+                continue
+            m = json.loads(fp.read_text(encoding="utf-8"))
+            gen = dt.datetime.fromisoformat(m.get("generated_at"))
+            if (NOW - gen).total_seconds() > 4 * 86400:  # 너무 오래된 파일은 무시
+                continue
+            for lab in ("up", "down"):
+                for r in (m.get("ranking") or {}).get(lab, []):
+                    c = r.get("stck_shrn_iscd")
+                    if c:
+                        names.setdefault(c, r.get("hts_kor_isnm"))
+            for it in (m.get("dart") or {}).get("filtered", []):
+                if it.get("code") and it.get("market") in ("Y", "K"):
+                    names.setdefault(it["code"], it.get("corp"))
+        except Exception as e:
+            log_err(f"followup read {fname}", e)
+    for it in (dart_result or {}).get("filtered", []):
+        if it.get("code") and it.get("market") in ("Y", "K"):
+            names.setdefault(it["code"], it.get("corp"))
+    for c in os.environ.get("EXTRA_CODES", "").replace(" ", "").split(","):
+        if c:
+            names.setdefault(c, None)
+    for c in WATCH:
+        names.pop(c, None)
+    out = {}
+    for code in list(names)[:200]:
+        try:
+            j = kis_get(
+                "/uapi/domestic-stock/v1/quotations/inquire-price",
+                "FHKST01010100",
+                {"FID_COND_MRKT_DIV_CODE": "J", "FID_INPUT_ISCD": code},
+            )
+            q = j.get("output", {})
+            out[code] = {"name": names[code], "stck_prpr": q.get("stck_prpr"),
+                         "prdy_ctrt": q.get("prdy_ctrt"), "acml_vol": q.get("acml_vol")}
+        except Exception as e:
+            log_err(f"followup {code}", e)
+    return out
+
+
 def main():
     global _token
     result = {
         "generated_at": NOW.isoformat(timespec="minutes"),
         "session": SESSION,
+        "followup_note": "evening 파일의 followup = 아침 순위·공시 종목들의 당일 종가(stck_prpr)·등락률(prdy_ctrt). 저녁 채점 때 ranking에 없는 종목은 여기서 먼저 찾을 것.",
         "note": ("morning=직전 거래일 장마감 기준 + 밤사이 해외/공시, evening=당일 장마감 기준. "
                  "등락률 단위는 %. KIS 필드: prpr=현재가/종가, prdy_ctrt=전일대비율, ntby_qty=순매수수량."),
     }
@@ -353,6 +404,9 @@ def main():
     else:
         errors.append({"where": "dart", "error": "DART_API_KEY 시크릿이 비어 있음"})
 
+    if _token and SESSION == "evening":
+        result["followup"] = get_followup(result.get("dart"))
+
     result["errors"] = errors
     text = json.dumps(result, ensure_ascii=False, indent=1)
     # 공개 저장소이므로 결과 전체에서도 키·토큰 문자열을 한 번 더 제거
@@ -363,7 +417,17 @@ def main():
     data = Path("data")
     (data / "archive").mkdir(parents=True, exist_ok=True)
     (data / f"latest_{SESSION}.json").write_text(text, encoding="utf-8")
-    (data / "archive" / f"{NOW:%Y-%m-%d}_{SESSION}.json").write_text(text, encoding="utf-8")
+    # 보관 파일 이름은 '데이터가 가리키는 거래일' 기준 (수집이 늦게 돌아도 날짜가 꼬이지 않게)
+    trade_date = NOW.strftime("%Y-%m-%d")
+    try:
+        if SESSION != "evening":
+            raise ValueError("morning은 실행일 기준")
+        d0 = next(iter(result.get("watch", {}).values()))["daily"][0]["stck_bsop_date"]
+        trade_date = f"{d0[:4]}-{d0[4:6]}-{d0[6:8]}"
+    except Exception:
+        pass
+    result_note = f"{trade_date}_{SESSION}"
+    (data / "archive" / f"{result_note}.json").write_text(text, encoding="utf-8")
     print(f"saved {SESSION}: errors={len(errors)}")
     for e in errors:
         print(" -", e["where"], ":", e["error"])
