@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07T23:34+09:00",
+ "generated_at": "2026-10-07T23:46+09:00",
  "session": "evening",
  "followup_note": "evening 파일의 followup = 아침 순위·공시 종목들의 당일 종가(stck_prpr)·등락률(prdy_ctrt). 저녁 채점 때 ranking에 없는 종목은 여기서 먼저 찾을 것.",
  "note": "morning=직전 거래일 장마감 기준 + 밤사이 해외/공시, evening=당일 장마감 기준. 등락률 단위는 %. KIS 필드: prpr=현재가/종가, prdy_ctrt=전일대비율, ntby_qty=순매수수량.",
@@ -1150,18 +1150,18 @@
  "overseas": {
   "S&P500": {
    "summary": {
-    "ovrs_nmix_prpr": "7772.66",
-    "ovrs_nmix_prdy_vrss": "-46.27",
-    "prdy_ctrt": "-0.59",
+    "ovrs_nmix_prpr": "7766.54",
+    "ovrs_nmix_prdy_vrss": "-52.39",
+    "prdy_ctrt": "-0.67",
     "hts_kor_isnm": "S&P500"
    },
    "daily": [
     {
      "stck_bsop_date": "20261007",
-     "ovrs_nmix_prpr": "7772.66",
+     "ovrs_nmix_prpr": "7766.54",
      "ovrs_nmix_oprc": "7792.98",
      "ovrs_nmix_hgpr": "7792.98",
-     "ovrs_nmix_lwpr": "7767.86"
+     "ovrs_nmix_lwpr": "7765.67"
     },
     {
      "stck_bsop_date": "20261006",
@@ -1195,15 +1195,15 @@
   },
   "나스닥종합": {
    "summary": {
-    "ovrs_nmix_prpr": "27395.45",
-    "ovrs_nmix_prdy_vrss": "-204.44",
-    "prdy_ctrt": "-0.74",
+    "ovrs_nmix_prpr": "27392.19",
+    "ovrs_nmix_prdy_vrss": "-207.70",
+    "prdy_ctrt": "-0.75",
     "hts_kor_isnm": "나스닥 종합"
    },
    "daily": [
     {
      "stck_bsop_date": "20261007",
-     "ovrs_nmix_prpr": "27395.45",
+     "ovrs_nmix_prpr": "27392.19",
      "ovrs_nmix_oprc": "27430.54",
      "ovrs_nmix_hgpr": "27458.28",
      "ovrs_nmix_lwpr": "27341.31"
@@ -1284,15 +1284,15 @@
   },
   "필라델피아반도체": {
    "summary": {
-    "ovrs_nmix_prpr": "12980.77",
-    "ovrs_nmix_prdy_vrss": "-237.05",
-    "prdy_ctrt": "-1.79",
+    "ovrs_nmix_prpr": "12985.28",
+    "ovrs_nmix_prdy_vrss": "-232.54",
+    "prdy_ctrt": "-1.76",
     "hts_kor_isnm": "필라델피아 반도체지수"
    },
    "daily": [
     {
      "stck_bsop_date": "20261007",
-     "ovrs_nmix_prpr": "12980.77",
+     "ovrs_nmix_prpr": "12985.28",
      "ovrs_nmix_oprc": "12932.51",
      "ovrs_nmix_hgpr": "13015.62",
      "ovrs_nmix_lwpr": "12864.94"
@@ -3535,263 +3535,53 @@
    "prdy_ctrt": "-5.04",
    "acml_vol": "605179"
   },
-  "158430": {
-   "name": "아톤",
-   "stck_prpr": "6760",
-   "prdy_ctrt": "-3.15",
-   "acml_vol": "11617301"
+  "084670": {
+   "name": "동양고속",
+   "stck_prpr": "29250",
+   "prdy_ctrt": "30.00",
+   "acml_vol": "100481"
   },
-  "200350": {
-   "name": "아티스트스튜디오",
-   "stck_prpr": "4165",
-   "prdy_ctrt": "-2.91",
-   "acml_vol": "534049"
+  "000650": {
+   "name": "천일고속",
+   "stck_prpr": "180300",
+   "prdy_ctrt": "29.99",
+   "acml_vol": "25162"
   },
-  "411080": {
-   "name": "샌즈랩",
-   "stck_prpr": "8190",
-   "prdy_ctrt": "-8.70",
-   "acml_vol": "7967501"
+  "117670": {
+   "name": "알파칩스",
+   "stck_prpr": "13400",
+   "prdy_ctrt": "29.97",
+   "acml_vol": "640518"
   },
-  "042510": {
-   "name": "라온시큐어",
-   "stck_prpr": "16350",
-   "prdy_ctrt": "9.95",
-   "acml_vol": "18485888"
+  "142280": {
+   "name": "녹십자엠에스",
+   "stck_prpr": "4300",
+   "prdy_ctrt": "29.91",
+   "acml_vol": "21850686"
   },
-  "047920": {
-   "name": "HLB제약",
-   "stck_prpr": "12550",
-   "prdy_ctrt": "-3.54",
-   "acml_vol": "4144391"
+  "141000": {
+   "name": "비아트론",
+   "stck_prpr": "14670",
+   "prdy_ctrt": "25.17",
+   "acml_vol": "2812021"
   },
-  "060480": {
-   "name": "국일신동",
-   "stck_prpr": "1117",
-   "prdy_ctrt": "1.18",
-   "acml_vol": "409407"
+  "371950": {
+   "name": "풍원정밀",
+   "stck_prpr": "3685",
+   "prdy_ctrt": "23.45",
+   "acml_vol": "166180"
   },
-  "263860": {
-   "name": "지니언스",
-   "stck_prpr": "23050",
-   "prdy_ctrt": "-6.49",
-   "acml_vol": "705421"
+  "419530": {
+   "name": "SAMG엔터",
+   "stck_prpr": "22050",
+   "prdy_ctrt": "22.98",
+   "acml_vol": "853697"
   },
-  "036930": {
-   "name": "주성엔지니어링",
-   "stck_prpr": "251500",
-   "prdy_ctrt": "-9.69",
-   "acml_vol": "2427490"
-  },
-  "115500": {
-   "name": "케이씨에스",
-   "stck_prpr": "11870",
-   "prdy_ctrt": "-6.90",
-   "acml_vol": "563039"
-  },
-  "026910": {
-   "name": "광진실업",
-   "stck_prpr": "2365",
-   "prdy_ctrt": "2.83",
-   "acml_vol": "194673"
-  },
-  "321820": {
-   "name": "아티스트컴퍼니",
-   "stck_prpr": "4020",
-   "prdy_ctrt": "-4.17",
-   "acml_vol": "143799"
-  },
-  "160190": {
-   "name": "하이젠알앤엠",
-   "stck_prpr": "33700",
-   "prdy_ctrt": "-1.32",
-   "acml_vol": "263362"
-  },
-  "351870": {
-   "name": "차이커뮤니케이션",
-   "stck_prpr": "2395",
-   "prdy_ctrt": "10.37",
-   "acml_vol": "42501"
-  },
-  "115610": {
-   "name": "이미지스",
-   "stck_prpr": "1897",
-   "prdy_ctrt": "-1.71",
-   "acml_vol": "294202"
-  },
-  "104540": {
-   "name": "코렌텍",
-   "stck_prpr": "5810",
-   "prdy_ctrt": "0.69",
-   "acml_vol": "209848"
-  },
-  "079190": {
-   "name": "케스피온",
-   "stck_prpr": "1724",
-   "prdy_ctrt": "0.88",
-   "acml_vol": "112676"
-  },
-  "003580": {
-   "name": "HLB글로벌",
-   "stck_prpr": "2015",
-   "prdy_ctrt": "-3.12",
-   "acml_vol": "980647"
-  },
-  "005110": {
-   "name": "한창",
-   "stck_prpr": "58",
-   "prdy_ctrt": "-24.68",
-   "acml_vol": "7093515"
-  },
-  "0161M0": {
-   "name": "네오사피엔스",
-   "stck_prpr": "12770",
-   "prdy_ctrt": "-7.93",
-   "acml_vol": "5316247"
-  },
-  "020120": {
-   "name": "키다리스튜디오",
-   "stck_prpr": "6670",
-   "prdy_ctrt": "-6.58",
-   "acml_vol": "988223"
-  },
-  "206400": {
-   "name": "베노티앤알",
-   "stck_prpr": "676",
-   "prdy_ctrt": "-5.72",
-   "acml_vol": "170659"
-  },
-  "001525": {
-   "name": "동양우",
-   "stck_prpr": "7500",
-   "prdy_ctrt": "-3.60",
-   "acml_vol": "1860"
-  },
-  "001380": {
-   "name": "SG글로벌",
-   "stck_prpr": "1105",
-   "prdy_ctrt": "0.00",
-   "acml_vol": "0"
-  },
-  "468670": {
-   "name": "브릴스",
-   "stck_prpr": "24950",
-   "prdy_ctrt": "-17.93",
-   "acml_vol": "2591878"
-  },
-  "068050": {
-   "name": "팬엔터테인먼트",
-   "stck_prpr": "1032",
-   "prdy_ctrt": "0.10",
-   "acml_vol": "129531"
-  },
-  "134580": {
-   "name": "탑코미디어",
-   "stck_prpr": "2350",
-   "prdy_ctrt": "-6.19",
-   "acml_vol": "639696"
-  },
-  "Q580071": {
-   "name": "KB 인버스 2X 천연가스 선물 ETN B",
-   "stck_prpr": "9075",
-   "prdy_ctrt": "-3.87",
-   "acml_vol": "3892"
-  },
-  "Q530136": {
-   "name": "삼성 인버스 2X 천연가스 선물 ETN D",
-   "stck_prpr": "12455",
-   "prdy_ctrt": "-4.23",
-   "acml_vol": "135522"
-  },
-  "Q500096": {
-   "name": "신한 인버스2X 천연가스 선물 ETN B",
-   "stck_prpr": "13835",
-   "prdy_ctrt": "-4.29",
-   "acml_vol": "1325"
-  },
-  "Q700032": {
-   "name": "하나 인버스 2X 천연가스 선물 ETN(H)",
-   "stck_prpr": "10750",
-   "prdy_ctrt": "-3.63",
-   "acml_vol": "1927"
-  },
-  "Q570118": {
-   "name": "한투 인버스2X천연가스선물 ETN B",
-   "stck_prpr": "9120",
-   "prdy_ctrt": "-4.70",
-   "acml_vol": "12979"
-  },
-  "Q610096": {
-   "name": "메리츠 인버스 2X 천연가스 선물 ETN(H)",
-   "stck_prpr": "10755",
-   "prdy_ctrt": "-4.19",
-   "acml_vol": "873"
-  },
-  "Q500093": {
-   "name": "신한 블룸버그 레버리지 WTI원유선물 ETN B",
-   "stck_prpr": "50720",
-   "prdy_ctrt": "2.46",
-   "acml_vol": "1996"
-  },
-  "Q550100": {
-   "name": "N2 인버스 2X 천연가스 선물 ETN",
-   "stck_prpr": "9760",
-   "prdy_ctrt": "-5.10",
-   "acml_vol": "318"
-  },
-  "417030": {
-   "name": "니어스랩",
-   "stck_prpr": "27500",
-   "prdy_ctrt": "2.04",
-   "acml_vol": "236773"
-  },
-  "Q570082": {
-   "name": "한투 인버스2X코스닥150선물 ETN",
-   "stck_prpr": "1447",
-   "prdy_ctrt": "6.16",
-   "acml_vol": "45413"
-  },
-  "Q760023": {
-   "name": "키움 레버리지 K방산 TOP5 ETN",
-   "stck_prpr": "11045",
-   "prdy_ctrt": "-9.62",
-   "acml_vol": "5732"
-  },
-  "Q700029": {
-   "name": "하나 S&P 레버리지 WTI원유 선물 ETN B",
-   "stck_prpr": "51010",
-   "prdy_ctrt": "2.24",
-   "acml_vol": "8"
-  },
-  "Q520095": {
-   "name": "미래에셋 레버리지 WTI원유 선물 ETN",
-   "stck_prpr": "24720",
-   "prdy_ctrt": "2.79",
-   "acml_vol": "80047"
-  },
-  "Q500072": {
-   "name": "신한 인버스 2X 코스닥 150 선물 ETN",
-   "stck_prpr": "1444",
-   "prdy_ctrt": "6.18",
-   "acml_vol": "85369"
-  },
-  "Q520057": {
-   "name": "미래에셋 인버스 2X 코스닥150 선물 ETN",
-   "stck_prpr": "1433",
-   "prdy_ctrt": "6.15",
-   "acml_vol": "11315550"
-  },
-  "Q700018": {
-   "name": "하나 인버스 2X 코스닥150 선물 ETN",
-   "stck_prpr": "1450",
-   "prdy_ctrt": "6.23",
-   "acml_vol": "28389"
-  },
-  "Q510027": {
-   "name": "대신 인버스 2X 코스닥 150 선물 ETN",
-   "stck_prpr": "1453",
-   "prdy_ctrt": "6.76",
-   "acml_vol": "42389"
+  "128820": {
+   "name": "대성산업",
+   "stck_prpr": "5060",
+   "prdy_ctrt": "19.91",
+   "acml_vol": "6992816"
   },
   "051630": {
    "name": "진양화학",
@@ -3799,17 +3589,203 @@
    "prdy_ctrt": "19.57",
    "acml_vol": "2037368"
   },
-  "002787": {
-   "name": "진흥기업2우B",
-   "stck_prpr": "9930",
-   "prdy_ctrt": "10.33",
-   "acml_vol": "955"
+  "307750": {
+   "name": "국전",
+   "stck_prpr": "2830",
+   "prdy_ctrt": "18.16",
+   "acml_vol": "16521510"
   },
-  "Q580044": {
-   "name": "KB 인버스 2X KOSDAQ 150 선물 ETN",
-   "stck_prpr": "1433",
-   "prdy_ctrt": "6.23",
-   "acml_vol": "219335"
+  "011090": {
+   "name": "에넥스",
+   "stck_prpr": "1539",
+   "prdy_ctrt": "17.12",
+   "acml_vol": "261842"
+  },
+  "032860": {
+   "name": "더라미",
+   "stck_prpr": "3560",
+   "prdy_ctrt": "16.91",
+   "acml_vol": "32560"
+  },
+  "038500": {
+   "name": "삼표시멘트",
+   "stck_prpr": "7830",
+   "prdy_ctrt": "16.00",
+   "acml_vol": "19643368"
+  },
+  "101730": {
+   "name": "위메이드맥스",
+   "stck_prpr": "5310",
+   "prdy_ctrt": "15.31",
+   "acml_vol": "4656881"
+  },
+  "372320": {
+   "name": "큐로셀",
+   "stck_prpr": "26150",
+   "prdy_ctrt": "15.20",
+   "acml_vol": "206383"
+  },
+  "008930": {
+   "name": "한미사이언스",
+   "stck_prpr": "66200",
+   "prdy_ctrt": "14.93",
+   "acml_vol": "702637"
+  },
+  "054410": {
+   "name": "케이피티유",
+   "stck_prpr": "2990",
+   "prdy_ctrt": "13.90",
+   "acml_vol": "57145"
+  },
+  "Q760027": {
+   "name": "키움 인버스 2X 전력 TOP5 ETN",
+   "stck_prpr": "5330",
+   "prdy_ctrt": "13.53",
+   "acml_vol": "46841"
+  },
+  "054940": {
+   "name": "엑사이엔씨",
+   "stck_prpr": "3870",
+   "prdy_ctrt": "13.32",
+   "acml_vol": "59105"
+  },
+  "383930": {
+   "name": "디티앤씨알오",
+   "stck_prpr": "2170",
+   "prdy_ctrt": "13.14",
+   "acml_vol": "383523"
+  },
+  "087010": {
+   "name": "펩트론",
+   "stck_prpr": "96900",
+   "prdy_ctrt": "-25.80",
+   "acml_vol": "1151621"
+  },
+  "005110": {
+   "name": "한창",
+   "stck_prpr": "58",
+   "prdy_ctrt": "-24.68",
+   "acml_vol": "7093515"
+  },
+  "468670": {
+   "name": "브릴스",
+   "stck_prpr": "24950",
+   "prdy_ctrt": "-17.93",
+   "acml_vol": "2591878"
+  },
+  "266690": {
+   "name": "덕산넵코어스",
+   "stck_prpr": "13280",
+   "prdy_ctrt": "-17.41",
+   "acml_vol": "2480188"
+  },
+  "486510": {
+   "name": "글로벌테크놀로지",
+   "stck_prpr": "12420",
+   "prdy_ctrt": "-15.51",
+   "acml_vol": "1983801"
+  },
+  "0035S0": {
+   "name": "빅웨이브로보틱스",
+   "stck_prpr": "26400",
+   "prdy_ctrt": "-14.84",
+   "acml_vol": "1602673"
+  },
+  "Q760026": {
+   "name": "키움 레버리지 전력 TOP5 ETN",
+   "stck_prpr": "14550",
+   "prdy_ctrt": "-13.57",
+   "acml_vol": "314940"
+  },
+  "211270": {
+   "name": "AP위성",
+   "stck_prpr": "8510",
+   "prdy_ctrt": "-12.27",
+   "acml_vol": "546255"
+  },
+  "274090": {
+   "name": "켄코아에어로스페이스",
+   "stck_prpr": "12180",
+   "prdy_ctrt": "-11.22",
+   "acml_vol": "4585198"
+  },
+  "319660": {
+   "name": "피에스케이",
+   "stck_prpr": "137200",
+   "prdy_ctrt": "-10.91",
+   "acml_vol": "509212"
+  },
+  "429270": {
+   "name": "시지트로닉스",
+   "stck_prpr": "3205",
+   "prdy_ctrt": "-10.72",
+   "acml_vol": "271712"
+  },
+  "488900": {
+   "name": "비츠로넥스텍",
+   "stck_prpr": "10680",
+   "prdy_ctrt": "-10.63",
+   "acml_vol": "490469"
+  },
+  "Q700034": {
+   "name": "하나 레버리지 K방산TOP10 ETN",
+   "stck_prpr": "9895",
+   "prdy_ctrt": "-10.61",
+   "acml_vol": "16830"
+  },
+  "027360": {
+   "name": "아주IB투자",
+   "stck_prpr": "3615",
+   "prdy_ctrt": "-10.41",
+   "acml_vol": "2712751"
+  },
+  "0100K0": {
+   "name": "KODEX 방산TOP10레버리지",
+   "stck_prpr": "5365",
+   "prdy_ctrt": "-10.28",
+   "acml_vol": "1341225"
+  },
+  "386380": {
+   "name": "스카이랩스",
+   "stck_prpr": "15280",
+   "prdy_ctrt": "-10.12",
+   "acml_vol": "1104029"
+  },
+  "066570": {
+   "name": "LG전자",
+   "stck_prpr": "209000",
+   "prdy_ctrt": "-10.11",
+   "acml_vol": "1824551"
+  },
+  "314130": {
+   "name": "지놈앤컴퍼니",
+   "stck_prpr": "5290",
+   "prdy_ctrt": "-10.03",
+   "acml_vol": "866590"
+  },
+  "001420": {
+   "name": "태원물산",
+   "stck_prpr": "2625",
+   "prdy_ctrt": "-9.95",
+   "acml_vol": "33056"
+  },
+  "Q550092": {
+   "name": "N2 월간 레버리지 방위산업 Top5 ETN",
+   "stck_prpr": "106110",
+   "prdy_ctrt": "-9.81",
+   "acml_vol": "47"
+  },
+  "036930": {
+   "name": "주성엔지니어링",
+   "stck_prpr": "251500",
+   "prdy_ctrt": "-9.69",
+   "acml_vol": "2427490"
+  },
+  "Q760023": {
+   "name": "키움 레버리지 K방산 TOP5 ETN",
+   "stck_prpr": "11045",
+   "prdy_ctrt": "-9.62",
+   "acml_vol": "5732"
   },
   "035620": {
    "name": "바른손이앤에이",
@@ -3852,12 +3828,6 @@
    "stck_prpr": "599",
    "prdy_ctrt": "4.54",
    "acml_vol": "243416"
-  },
-  "008930": {
-   "name": "한미사이언스",
-   "stck_prpr": "66200",
-   "prdy_ctrt": "14.93",
-   "acml_vol": "702637"
   },
   "308100": {
    "name": "형지글로벌",
@@ -3924,12 +3894,43 @@
    "stck_prpr": "2920",
    "prdy_ctrt": "-8.18",
    "acml_vol": "118004"
+  },
+  "027410": {
+   "name": "BGF",
+   "stck_prpr": "3785",
+   "prdy_ctrt": "1.75",
+   "acml_vol": "216810"
+  },
+  "137080": {
+   "name": "나래나노텍",
+   "stck_prpr": "6820",
+   "prdy_ctrt": "8.25",
+   "acml_vol": "24412"
+  },
+  "126600": {
+   "name": "BGF에코머티리얼즈",
+   "stck_prpr": "3565",
+   "prdy_ctrt": "11.23",
+   "acml_vol": "3178648"
+  },
+  "000180": {
+   "name": "성창기업지주",
+   "stck_prpr": "4800",
+   "prdy_ctrt": "-0.41",
+   "acml_vol": "7432"
+  },
+  "023440": {
+   "name": "제이스코홀딩스",
+   "stck_prpr": "521",
+   "prdy_ctrt": "0.00",
+   "acml_vol": "0"
+  },
+  "105330": {
+   "name": "케이엔더블유",
+   "stck_prpr": "9210",
+   "prdy_ctrt": "4.07",
+   "acml_vol": "9194587"
   }
  },
- "errors": [
-  {
-   "where": "followup 000250",
-   "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-  }
- ]
+ "errors": []
 }
