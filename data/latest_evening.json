@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T23:25+09:00",
+ "generated_at": "2026-10-09T23:42+09:00",
  "session": "evening",
  "followup_note": "evening 파일의 followup = 아침 순위·공시 종목들의 당일 종가(stck_prpr)·등락률(prdy_ctrt). 저녁 채점 때 ranking에 없는 종목은 여기서 먼저 찾을 것.",
  "note": "morning=직전 거래일 장마감 기준 + 밤사이 해외/공시, evening=당일 장마감 기준. 등락률 단위는 %. KIS 필드: prpr=현재가/종가, prdy_ctrt=전일대비율, ntby_qty=순매수수량.",
@@ -1150,15 +1150,15 @@
  "overseas": {
   "S&P500": {
    "summary": {
-    "ovrs_nmix_prpr": "7793.25",
-    "ovrs_nmix_prdy_vrss": "27.89",
-    "prdy_ctrt": "0.36",
+    "ovrs_nmix_prpr": "7787.73",
+    "ovrs_nmix_prdy_vrss": "22.37",
+    "prdy_ctrt": "0.29",
     "hts_kor_isnm": "S&P500"
    },
    "daily": [
     {
      "stck_bsop_date": "20261009",
-     "ovrs_nmix_prpr": "7793.25",
+     "ovrs_nmix_prpr": "7787.73",
      "ovrs_nmix_oprc": "7786.36",
      "ovrs_nmix_hgpr": "7796.28",
      "ovrs_nmix_lwpr": "7779.34"
@@ -1195,15 +1195,15 @@
   },
   "나스닥종합": {
    "summary": {
-    "ovrs_nmix_prpr": "27306.09",
-    "ovrs_nmix_prdy_vrss": "112.75",
-    "prdy_ctrt": "0.41",
+    "ovrs_nmix_prpr": "27292.31",
+    "ovrs_nmix_prdy_vrss": "98.97",
+    "prdy_ctrt": "0.36",
     "hts_kor_isnm": "나스닥 종합"
    },
    "daily": [
     {
      "stck_bsop_date": "20261009",
-     "ovrs_nmix_prpr": "27306.09",
+     "ovrs_nmix_prpr": "27292.31",
      "ovrs_nmix_oprc": "27342.27",
      "ovrs_nmix_hgpr": "27375.55",
      "ovrs_nmix_lwpr": "27254.03"
@@ -1284,15 +1284,15 @@
   },
   "필라델피아반도체": {
    "summary": {
-    "ovrs_nmix_prpr": "12575.79",
-    "ovrs_nmix_prdy_vrss": "-47.93",
-    "prdy_ctrt": "-0.38",
+    "ovrs_nmix_prpr": "12542.51",
+    "ovrs_nmix_prdy_vrss": "-81.21",
+    "prdy_ctrt": "-0.64",
     "hts_kor_isnm": "필라델피아 반도체지수"
    },
    "daily": [
     {
      "stck_bsop_date": "20261009",
-     "ovrs_nmix_prpr": "12575.79",
+     "ovrs_nmix_prpr": "12542.51",
      "ovrs_nmix_oprc": "12796.00",
      "ovrs_nmix_hgpr": "12826.67",
      "ovrs_nmix_lwpr": "12526.23"
