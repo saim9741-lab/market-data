@@ -1,14 +1,10 @@
 name: market-data
 
 on:
-  schedule:
-    # GitHub cron은 UTC 기준이고, 실행이 수십 분~몇 시간 늦거나 빠질 수 있어서
-    # 브리핑보다 훨씬 이르게 + 두 번씩(재시도) 잡음. 정각(:00)은 혼잡해서 피함.
-    - cron: "13 20 * * 0-4"   # 한국시간 월~금 05:13 (장전 데이터)
-    - cron: "47 20 * * 0-4"   # 한국시간 월~금 05:47 (장전 데이터 재시도)
-    - cron: "17 7 * * 1-5"    # 한국시간 월~금 16:17 (장마감 데이터)
-    - cron: "53 7 * * 1-5"    # 한국시간 월~금 16:53 (장마감 데이터 재시도)
-  workflow_dispatch:           # Actions 탭에서 수동 실행용
+  # 예약 실행은 GitHub 내장 cron 대신 cron-job.org가 아래 workflow_dispatch를 호출함
+  # (GitHub 내장 cron은 몇 시간씩 늦거나 빠져서, 늦게 돈 아침 수집이 장중 데이터로 덮어쓰는 문제가 있었음)
+  #   평일 06:30 KST → session=morning / 평일 16:20 KST → session=evening
+  workflow_dispatch:           # cron-job.org 호출 + Actions 탭 수동 실행용
     inputs:
       session:
         description: "morning 또는 evening (비우면 한국시간 기준 자동)"
