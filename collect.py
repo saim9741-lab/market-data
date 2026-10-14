@@ -376,6 +376,54 @@ def get_followup(dart_result):
     return out
 
 
+def fix_premarket(result):
+    """장전(morning) 수집 보정.
+    한투 서버는 새벽에 날짜를 '오늘'로 넘겨서, 장 시작 전에는 지수·종목·순위의 등락률이 전부 0.00으로 온다.
+    (현재가=직전 종가, 대비=0, 순위는 의미 없음) → 직전 거래일 장마감 때 받아둔 latest_evening.json 값으로 교체한다.
+    또 일별 시세(daily)·투자자(investor) 맨 앞에 붙는 '오늘(거래 전)' 빈 행을 지운다."""
+    today = NOW.strftime("%Y%m%d")
+    for item in (result.get("watch") or {}).values():
+        for key in ("daily", "investor"):
+            rows = item.get(key) or []
+            if rows and rows[0].get("stck_bsop_date") == today:
+                item[key] = rows[1:]
+
+    idx = result.get("indices") or {}
+    broken = bool(idx) and all(float(v.get("bstp_nmix_prdy_ctrt") or 0) == 0 for v in idx.values())
+    if not broken:
+        return
+    try:
+        ev = json.loads((Path("data") / "latest_evening.json").read_text(encoding="utf-8"))
+    except Exception as e:
+        log_err("premarket fix: latest_evening.json 읽기 실패", e)
+        return
+    try:
+        ev_trade = next(iter(ev["watch"].values()))["daily"][0]["stck_bsop_date"]
+    except Exception:
+        ev_trade = None
+    # 아침 파일의 일별시세 첫 행 = 직전 거래일. 저녁 파일이 그날 것이 아니면(저녁 수집 누락) 교체하지 않음
+    try:
+        last_trade = next(iter(result["watch"].values()))["daily"][0]["stck_bsop_date"]
+    except Exception:
+        last_trade = None
+    if not ev_trade or (last_trade and ev_trade != last_trade):
+        errors.append({"where": "premarket fix",
+                       "error": f"장전 수집이라 등락률이 0.00인데, 저녁 파일 거래일({ev_trade})이 직전 거래일({last_trade})과 달라 교체 못 함 — indices·ranking·quote 등락률은 웹서치로 확인 필요"})
+        return
+    result["indices"] = ev.get("indices", idx)
+    if ev.get("ranking"):
+        result["ranking"] = ev["ranking"]
+    for code, item in (result.get("watch") or {}).items():
+        q = ((ev.get("watch") or {}).get(code) or {}).get("quote")
+        if q:
+            item["quote"] = q
+    result["prev_close_source"] = {
+        "file": "latest_evening.json", "generated_at": ev.get("generated_at"), "trade_date": ev_trade,
+        "note": "장전 수집이라 한투가 등락률을 0.00으로 줌 → indices·ranking·watch.quote는 직전 거래일 장마감(KRX 정규장) 수집값으로 교체됨. "
+                "watch.daily의 직전일 종가는 장후 거래(NXT 등)가 반영돼 정규장 종가와 다를 수 있으니, 직전일 종가·등락률은 quote를 기준으로 쓸 것.",
+    }
+
+
 def main():
     global _token
     result = {
@@ -403,6 +451,9 @@ def main():
         result["dart"] = get_dart()
     else:
         errors.append({"where": "dart", "error": "DART_API_KEY 시크릿이 비어 있음"})
+
+    if _token and SESSION == "morning":
+        fix_premarket(result)
 
     if _token and SESSION == "evening":
         result["followup"] = get_followup(result.get("dart"))
