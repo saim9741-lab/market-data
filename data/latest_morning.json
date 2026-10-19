@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-10-19T06:30+09:00",
+ "generated_at": "2026-10-20T06:30+09:00",
  "session": "morning",
  "followup_note": "evening 파일의 followup = 아침 순위·공시 종목들의 당일 종가(stck_prpr)·등락률(prdy_ctrt). 저녁 채점 때 ranking에 없는 종목은 여기서 먼저 찾을 것.",
  "note": "morning=직전 거래일 장마감 기준 + 밤사이 해외/공시, evening=당일 장마감 기준. 등락률 단위는 %. KIS 필드: prpr=현재가/종가, prdy_ctrt=전일대비율, ntby_qty=순매수수량.",
  "indices": {
   "코스피": {
-   "bstp_nmix_prpr": "5668.05",
-   "bstp_nmix_prdy_vrss": "113.83",
-   "bstp_nmix_prdy_ctrt": "2.05",
-   "acml_vol": "286453",
-   "acml_tr_pbmn": "20021281",
-   "ascn_issu_cnt": "759",
-   "down_issu_cnt": "135",
-   "stnr_issu_cnt": "22"
+   "bstp_nmix_prpr": "5768.01",
+   "bstp_nmix_prdy_vrss": "99.96",
+   "bstp_nmix_prdy_ctrt": "1.76",
+   "acml_vol": "253159",
+   "acml_tr_pbmn": "17217397",
+   "ascn_issu_cnt": "677",
+   "down_issu_cnt": "204",
+   "stnr_issu_cnt": "33"
   },
   "코스닥": {
-   "bstp_nmix_prpr": "794.78",
-   "bstp_nmix_prdy_vrss": "33.96",
-   "bstp_nmix_prdy_ctrt": "4.46",
-   "acml_vol": "442574",
-   "acml_tr_pbmn": "5739864",
-   "ascn_issu_cnt": "1471",
-   "down_issu_cnt": "222",
-   "stnr_issu_cnt": "40"
+   "bstp_nmix_prpr": "808.89",
+   "bstp_nmix_prdy_vrss": "14.11",
+   "bstp_nmix_prdy_ctrt": "1.78",
+   "acml_vol": "418924",
+   "acml_tr_pbmn": "4647011",
+   "ascn_issu_cnt": "1186",
+   "down_issu_cnt": "469",
+   "stnr_issu_cnt": "77"
   },
   "코스피200": {
-   "bstp_nmix_prpr": "878.16",
-   "bstp_nmix_prdy_vrss": "17.46",
-   "bstp_nmix_prdy_ctrt": "2.03",
-   "acml_vol": "120586",
-   "acml_tr_pbmn": "17919248",
-   "ascn_issu_cnt": "155",
-   "down_issu_cnt": "43",
+   "bstp_nmix_prpr": "891.30",
+   "bstp_nmix_prdy_vrss": "13.14",
+   "bstp_nmix_prdy_ctrt": "1.50",
+   "acml_vol": "97746",
+   "acml_tr_pbmn": "15309798",
+   "ascn_issu_cnt": "176",
+   "down_issu_cnt": "22",
    "stnr_issu_cnt": "3"
   }
  },
@@ -39,20 +39,26 @@
   "005930": {
    "name": "삼성전자",
    "quote": {
-    "stck_prpr": "217500",
-    "prdy_vrss": "7500",
-    "prdy_ctrt": "3.57",
-    "acml_vol": "17812360",
-    "acml_tr_pbmn": "3851097760250",
-    "hts_avls": "12715656",
-    "per": "33.14",
-    "pbr": "3.40",
+    "stck_prpr": "219000",
+    "prdy_vrss": "3500",
+    "prdy_ctrt": "1.62",
+    "acml_vol": "15827848",
+    "acml_tr_pbmn": "3404316492750",
+    "hts_avls": "12803350",
+    "per": "33.36",
+    "pbr": "3.42",
     "w52_hgpr": "374500",
     "w52_lwpr": "94500",
-    "frgn_hldn_qty": "2688215103",
-    "hts_frgn_ehrt": "45.98"
+    "frgn_hldn_qty": "2688873533",
+    "hts_frgn_ehrt": "45.99"
    },
    "daily": [
+    {
+     "stck_bsop_date": "20261019",
+     "stck_clpr": "218000",
+     "prdy_ctrt": "1.16",
+     "acml_vol": "17617415"
+    },
     {
      "stck_bsop_date": "20261016",
      "stck_clpr": "215500",
@@ -160,15 +166,15 @@
      "stck_clpr": "252500",
      "prdy_ctrt": "-0.39",
      "acml_vol": "11827514"
-    },
-    {
-     "stck_bsop_date": "20260916",
-     "stck_clpr": "253500",
-     "prdy_ctrt": "2.01",
-     "acml_vol": "11757106"
     }
    ],
    "investor": [
+    {
+     "stck_bsop_date": "20261019",
+     "prsn_ntby_qty": "-880224",
+     "frgn_ntby_qty": "1241581",
+     "orgn_ntby_qty": "-42900"
+    },
     {
      "stck_bsop_date": "20261016",
      "prsn_ntby_qty": "-40774",
@@ -186,32 +192,32 @@
      "prsn_ntby_qty": "505494",
      "frgn_ntby_qty": "-829758",
      "orgn_ntby_qty": "310050"
-    },
-    {
-     "stck_bsop_date": "20261013",
-     "prsn_ntby_qty": "5221370",
-     "frgn_ntby_qty": "-5943474",
-     "orgn_ntby_qty": "1016744"
     }
    ]
   },
   "000660": {
    "name": "SK하이닉스",
    "quote": {
-    "stck_prpr": "1278000",
-    "prdy_vrss": "16000",
-    "prdy_ctrt": "1.27",
-    "acml_vol": "4387692",
-    "acml_tr_pbmn": "5645567636000",
-    "hts_avls": "9335692",
-    "per": "21.68",
-    "pbr": "7.44",
+    "stck_prpr": "1280000",
+    "prdy_vrss": "8000",
+    "prdy_ctrt": "0.63",
+    "acml_vol": "3498193",
+    "acml_tr_pbmn": "4361716902000",
+    "hts_avls": "9350302",
+    "per": "21.71",
+    "pbr": "7.45",
     "w52_hgpr": "2987000",
-    "w52_lwpr": "420500",
-    "frgn_hldn_qty": "356864911",
-    "hts_frgn_ehrt": "48.85"
+    "w52_lwpr": "465500",
+    "frgn_hldn_qty": "356621525",
+    "hts_frgn_ehrt": "48.82"
    },
    "daily": [
+    {
+     "stck_bsop_date": "20261019",
+     "stck_clpr": "1277000",
+     "prdy_ctrt": "0.39",
+     "acml_vol": "3737172"
+    },
     {
      "stck_bsop_date": "20261016",
      "stck_clpr": "1272000",
@@ -319,15 +325,15 @@
      "stck_clpr": "1745000",
      "prdy_ctrt": "-0.80",
      "acml_vol": "2803398"
-    },
-    {
-     "stck_bsop_date": "20260916",
-     "stck_clpr": "1759000",
-     "prdy_ctrt": "4.08",
-     "acml_vol": "2857754"
     }
    ],
    "investor": [
+    {
+     "stck_bsop_date": "20261019",
+     "prsn_ntby_qty": "-151204",
+     "frgn_ntby_qty": "-140774",
+     "orgn_ntby_qty": "-197986"
+    },
     {
      "stck_bsop_date": "20261016",
      "prsn_ntby_qty": "-151018",
@@ -345,32 +351,32 @@
      "prsn_ntby_qty": "-85326",
      "frgn_ntby_qty": "-487662",
      "orgn_ntby_qty": "123833"
-    },
-    {
-     "stck_bsop_date": "20261013",
-     "prsn_ntby_qty": "782218",
-     "frgn_ntby_qty": "-1613929",
-     "orgn_ntby_qty": "414821"
     }
    ]
   },
   "005380": {
    "name": "현대차",
    "quote": {
-    "stck_prpr": "312500",
-    "prdy_vrss": "17000",
-    "prdy_ctrt": "5.75",
-    "acml_vol": "803580",
-    "acml_tr_pbmn": "250974771000",
-    "hts_avls": "635833",
-    "per": "8.84",
-    "pbr": "0.71",
+    "stck_prpr": "324000",
+    "prdy_vrss": "12000",
+    "prdy_ctrt": "3.85",
+    "acml_vol": "537544",
+    "acml_tr_pbmn": "171718065000",
+    "hts_avls": "659231",
+    "per": "9.17",
+    "pbr": "0.74",
     "w52_hgpr": "783000",
-    "w52_lwpr": "234000",
-    "frgn_hldn_qty": "48665609",
-    "hts_frgn_ehrt": "23.92"
+    "w52_lwpr": "241500",
+    "frgn_hldn_qty": "48970997",
+    "hts_frgn_ehrt": "24.07"
    },
    "daily": [
+    {
+     "stck_bsop_date": "20261019",
+     "stck_clpr": "326000",
+     "prdy_ctrt": "4.49",
+     "acml_vol": "554076"
+    },
     {
      "stck_bsop_date": "20261016",
      "stck_clpr": "312000",
@@ -478,15 +484,15 @@
      "stck_clpr": "363000",
      "prdy_ctrt": "0.28",
      "acml_vol": "374225"
-    },
-    {
-     "stck_bsop_date": "20260916",
-     "stck_clpr": "362000",
-     "prdy_ctrt": "-1.36",
-     "acml_vol": "482107"
     }
    ],
    "investor": [
+    {
+     "stck_bsop_date": "20261019",
+     "prsn_ntby_qty": "-95598",
+     "frgn_ntby_qty": "-31974",
+     "orgn_ntby_qty": "127828"
+    },
     {
      "stck_bsop_date": "20261016",
      "prsn_ntby_qty": "-215135",
@@ -504,32 +510,32 @@
      "prsn_ntby_qty": "-65290",
      "frgn_ntby_qty": "4291",
      "orgn_ntby_qty": "62991"
-    },
-    {
-     "stck_bsop_date": "20261013",
-     "prsn_ntby_qty": "-73336",
-     "frgn_ntby_qty": "-73040",
-     "orgn_ntby_qty": "149770"
     }
    ]
   },
   "360750": {
    "name": "TIGER 미국S&P500",
    "quote": {
-    "stck_prpr": "25650",
-    "prdy_vrss": "-50",
-    "prdy_ctrt": "-0.19",
-    "acml_vol": "35540633",
-    "acml_tr_pbmn": "918591300261",
-    "hts_avls": "209625",
+    "stck_prpr": "25505",
+    "prdy_vrss": "-145",
+    "prdy_ctrt": "-0.57",
+    "acml_vol": "25615213",
+    "acml_tr_pbmn": "653501982500",
+    "hts_avls": "208962",
     "per": "0.00",
     "pbr": "0.00",
     "w52_hgpr": "29000",
-    "w52_lwpr": "23255",
-    "frgn_hldn_qty": "234027",
-    "hts_frgn_ehrt": "0.03"
+    "w52_lwpr": "23535",
+    "frgn_hldn_qty": "150701",
+    "hts_frgn_ehrt": "0.02"
    },
    "daily": [
+    {
+     "stck_bsop_date": "20261019",
+     "stck_clpr": "25505",
+     "prdy_ctrt": "-0.57",
+     "acml_vol": "25615213"
+    },
     {
      "stck_bsop_date": "20261016",
      "stck_clpr": "25650",
@@ -637,15 +643,15 @@
      "stck_clpr": "26055",
      "prdy_ctrt": "0.99",
      "acml_vol": "30779941"
-    },
-    {
-     "stck_bsop_date": "20260916",
-     "stck_clpr": "25800",
-     "prdy_ctrt": "0.68",
-     "acml_vol": "39362953"
     }
    ],
    "investor": [
+    {
+     "stck_bsop_date": "20261019",
+     "prsn_ntby_qty": "872031",
+     "frgn_ntby_qty": "-166774",
+     "orgn_ntby_qty": "-709950"
+    },
     {
      "stck_bsop_date": "20261016",
      "prsn_ntby_qty": "669183",
@@ -663,12 +669,6 @@
      "prsn_ntby_qty": "535691",
      "frgn_ntby_qty": "-59545",
      "orgn_ntby_qty": "-488310"
-    },
-    {
-     "stck_bsop_date": "20261013",
-     "prsn_ntby_qty": "-51516",
-     "frgn_ntby_qty": "475695",
-     "orgn_ntby_qty": "-399936"
     }
    ]
   }
@@ -676,438 +676,445 @@
  "ranking": {
   "up": [
    {
-    "stck_shrn_iscd": "101360",
-    "hts_kor_isnm": "에코앤드림",
-    "stck_prpr": "10660",
-    "prdy_ctrt": "30.00",
-    "acml_vol": "1509298"
+    "stck_shrn_iscd": "083660",
+    "hts_kor_isnm": "CSA 코스믹",
+    "stck_prpr": "1531",
+    "prdy_ctrt": "29.97",
+    "acml_vol": "688054"
    },
    {
-    "stck_shrn_iscd": "317240",
-    "hts_kor_isnm": "TS트릴리온",
-    "stck_prpr": "1261",
-    "prdy_ctrt": "30.00",
-    "acml_vol": "1940414"
+    "stck_shrn_iscd": "008970",
+    "hts_kor_isnm": "KBI동양철관",
+    "stck_prpr": "1748",
+    "prdy_ctrt": "29.96",
+    "acml_vol": "13105098"
    },
    {
-    "stck_shrn_iscd": "45226K",
-    "hts_kor_isnm": "한화갤러리아우",
-    "stck_prpr": "5200",
-    "prdy_ctrt": "30.00",
-    "acml_vol": "141908"
-   },
-   {
-    "stck_shrn_iscd": "009190",
-    "hts_kor_isnm": "대양금속",
-    "stck_prpr": "1049",
-    "prdy_ctrt": "29.99",
-    "acml_vol": "28202562"
-   },
-   {
-    "stck_shrn_iscd": "377220",
-    "hts_kor_isnm": "프롬바이오",
-    "stck_prpr": "2840",
-    "prdy_ctrt": "29.98",
-    "acml_vol": "1388263"
-   },
-   {
-    "stck_shrn_iscd": "219750",
-    "hts_kor_isnm": "한국비티비",
-    "stck_prpr": "2930",
-    "prdy_ctrt": "29.93",
-    "acml_vol": "121182"
-   },
-   {
-    "stck_shrn_iscd": "250930",
-    "hts_kor_isnm": "예선테크",
-    "stck_prpr": "1615",
-    "prdy_ctrt": "29.93",
-    "acml_vol": "647054"
-   },
-   {
-    "stck_shrn_iscd": "289220",
-    "hts_kor_isnm": "자이언트스텝",
-    "stck_prpr": "1021",
+    "stck_shrn_iscd": "010580",
+    "hts_kor_isnm": "에스엠벡셀",
+    "stck_prpr": "4040",
     "prdy_ctrt": "29.90",
-    "acml_vol": "465424"
-   },
-   {
-    "stck_shrn_iscd": "088280",
-    "hts_kor_isnm": "쏘닉스",
-    "stck_prpr": "3805",
-    "prdy_ctrt": "28.76",
-    "acml_vol": "549915"
-   },
-   {
-    "stck_shrn_iscd": "491000",
-    "hts_kor_isnm": "리브스메드",
-    "stck_prpr": "43750",
-    "prdy_ctrt": "28.68",
-    "acml_vol": "1100195"
-   },
-   {
-    "stck_shrn_iscd": "046970",
-    "hts_kor_isnm": "우리로",
-    "stck_prpr": "9150",
-    "prdy_ctrt": "27.97",
-    "acml_vol": "10098314"
-   },
-   {
-    "stck_shrn_iscd": "087600",
-    "hts_kor_isnm": "픽셀플러스",
-    "stck_prpr": "4595",
-    "prdy_ctrt": "25.03",
-    "acml_vol": "1644"
-   },
-   {
-    "stck_shrn_iscd": "396300",
-    "hts_kor_isnm": "HT로보틱스",
-    "stck_prpr": "8940",
-    "prdy_ctrt": "25.03",
-    "acml_vol": "30555997"
-   },
-   {
-    "stck_shrn_iscd": "420570",
-    "hts_kor_isnm": "제이투케이바이오",
-    "stck_prpr": "10290",
-    "prdy_ctrt": "24.73",
-    "acml_vol": "8819"
-   },
-   {
-    "stck_shrn_iscd": "042520",
-    "hts_kor_isnm": "한스바이오메드",
-    "stck_prpr": "21650",
-    "prdy_ctrt": "24.50",
-    "acml_vol": "320006"
-   },
-   {
-    "stck_shrn_iscd": "290650",
-    "hts_kor_isnm": "엘앤씨바이오",
-    "stck_prpr": "69900",
-    "prdy_ctrt": "23.28",
-    "acml_vol": "815920"
-   },
-   {
-    "stck_shrn_iscd": "092870",
-    "hts_kor_isnm": "엑시콘",
-    "stck_prpr": "54100",
-    "prdy_ctrt": "22.40",
-    "acml_vol": "787407"
-   },
-   {
-    "stck_shrn_iscd": "079650",
-    "hts_kor_isnm": "서산",
-    "stck_prpr": "8030",
-    "prdy_ctrt": "22.22",
-    "acml_vol": "10760605"
-   },
-   {
-    "stck_shrn_iscd": "109670",
-    "hts_kor_isnm": "씨싸이트",
-    "stck_prpr": "13680",
-    "prdy_ctrt": "21.38",
-    "acml_vol": "440819"
-   },
-   {
-    "stck_shrn_iscd": "060260",
-    "hts_kor_isnm": "뉴보텍",
-    "stck_prpr": "1001",
-    "prdy_ctrt": "19.02",
-    "acml_vol": "743231"
-   },
-   {
-    "stck_shrn_iscd": "429270",
-    "hts_kor_isnm": "시지트로닉스",
-    "stck_prpr": "3070",
-    "prdy_ctrt": "18.53",
-    "acml_vol": "318165"
-   },
-   {
-    "stck_shrn_iscd": "365590",
-    "hts_kor_isnm": "하이딥",
-    "stck_prpr": "1597",
-    "prdy_ctrt": "18.30",
-    "acml_vol": "168449"
-   },
-   {
-    "stck_shrn_iscd": "445680",
-    "hts_kor_isnm": "큐리옥스바이오시스템즈",
-    "stck_prpr": "68000",
-    "prdy_ctrt": "18.26",
-    "acml_vol": "237696"
-   },
-   {
-    "stck_shrn_iscd": "282720",
-    "hts_kor_isnm": "금양그린파워",
-    "stck_prpr": "7800",
-    "prdy_ctrt": "18.18",
-    "acml_vol": "14423"
-   },
-   {
-    "stck_shrn_iscd": "014950",
-    "hts_kor_isnm": "삼익제약",
-    "stck_prpr": "7950",
-    "prdy_ctrt": "18.13",
-    "acml_vol": "4767551"
-   },
-   {
-    "stck_shrn_iscd": "355690",
-    "hts_kor_isnm": "에이텀",
-    "stck_prpr": "7990",
-    "prdy_ctrt": "18.02",
-    "acml_vol": "557463"
-   },
-   {
-    "stck_shrn_iscd": "290660",
-    "hts_kor_isnm": "다이나믹솔루션",
-    "stck_prpr": "1245",
-    "prdy_ctrt": "17.56",
-    "acml_vol": "6462497"
-   },
-   {
-    "stck_shrn_iscd": "115530",
-    "hts_kor_isnm": "씨엔플러스",
-    "stck_prpr": "3025",
-    "prdy_ctrt": "17.48",
-    "acml_vol": "43846"
-   },
-   {
-    "stck_shrn_iscd": "170920",
-    "hts_kor_isnm": "엘티씨",
-    "stck_prpr": "36500",
-    "prdy_ctrt": "17.17",
-    "acml_vol": "324193"
-   },
-   {
-    "stck_shrn_iscd": "060480",
-    "hts_kor_isnm": "국일신동",
-    "stck_prpr": "1090",
-    "prdy_ctrt": "17.08",
-    "acml_vol": "123792"
-   }
-  ],
-  "down": [
-   {
-    "stck_shrn_iscd": "065650",
-    "hts_kor_isnm": "하이퍼코퍼레이션",
-    "stck_prpr": "2460",
-    "prdy_ctrt": "-24.66",
-    "acml_vol": "2860419"
-   },
-   {
-    "stck_shrn_iscd": "457550",
-    "hts_kor_isnm": "우진엔텍",
-    "stck_prpr": "11150",
-    "prdy_ctrt": "-21.09",
-    "acml_vol": "3502276"
-   },
-   {
-    "stck_shrn_iscd": "011155",
-    "hts_kor_isnm": "CJ씨푸드1우",
-    "stck_prpr": "4505",
-    "prdy_ctrt": "-18.39",
-    "acml_vol": "33684"
-   },
-   {
-    "stck_shrn_iscd": "308100",
-    "hts_kor_isnm": "형지글로벌",
-    "stck_prpr": "312",
-    "prdy_ctrt": "-18.32",
-    "acml_vol": "2965253"
-   },
-   {
-    "stck_shrn_iscd": "288980",
-    "hts_kor_isnm": "모아데이타",
-    "stck_prpr": "239",
-    "prdy_ctrt": "-14.95",
-    "acml_vol": "11363469"
-   },
-   {
-    "stck_shrn_iscd": "Q570085",
-    "hts_kor_isnm": "한투 인도네시아대표원자재 ETN",
-    "stck_prpr": "7905",
-    "prdy_ctrt": "-14.26",
-    "acml_vol": "4120"
-   },
-   {
-    "stck_shrn_iscd": "179880",
-    "hts_kor_isnm": "멜콘",
-    "stck_prpr": "15130",
-    "prdy_ctrt": "-13.39",
-    "acml_vol": "10978714"
+    "acml_vol": "26766030"
    },
    {
     "stck_shrn_iscd": "012340",
     "hts_kor_isnm": "뉴인텍",
-    "stck_prpr": "676",
-    "prdy_ctrt": "-13.33",
-    "acml_vol": "19712278"
+    "stck_prpr": "878",
+    "prdy_ctrt": "29.88",
+    "acml_vol": "8847017"
    },
    {
-    "stck_shrn_iscd": "Q510027",
-    "hts_kor_isnm": "대신 인버스 2X 코스닥 150 선물 ETN",
-    "stck_prpr": "1836",
-    "prdy_ctrt": "-12.57",
-    "acml_vol": "390148"
+    "stck_shrn_iscd": "456160",
+    "hts_kor_isnm": "지투지바이오",
+    "stck_prpr": "39750",
+    "prdy_ctrt": "27.61",
+    "acml_vol": "151365"
    },
    {
-    "stck_shrn_iscd": "256440",
-    "hts_kor_isnm": "ACE MSCI인도네시아(합성)",
-    "stck_prpr": "4060",
-    "prdy_ctrt": "-10.87",
-    "acml_vol": "455210"
+    "stck_shrn_iscd": "419050",
+    "hts_kor_isnm": "삼기에너지솔루션즈",
+    "stck_prpr": "2675",
+    "prdy_ctrt": "24.71",
+    "acml_vol": "52385275"
    },
    {
-    "stck_shrn_iscd": "002787",
-    "hts_kor_isnm": "진흥기업2우B",
-    "stck_prpr": "8090",
-    "prdy_ctrt": "-10.80",
-    "acml_vol": "1894"
+    "stck_shrn_iscd": "290670",
+    "hts_kor_isnm": "대보마그네틱",
+    "stck_prpr": "6500",
+    "prdy_ctrt": "22.64",
+    "acml_vol": "14436"
    },
    {
-    "stck_shrn_iscd": "003490",
-    "hts_kor_isnm": "대한항공",
-    "stck_prpr": "26300",
-    "prdy_ctrt": "-10.70",
-    "acml_vol": "7996480"
+    "stck_shrn_iscd": "064520",
+    "hts_kor_isnm": "테크엘",
+    "stck_prpr": "1695",
+    "prdy_ctrt": "20.99",
+    "acml_vol": "10054"
    },
    {
-    "stck_shrn_iscd": "Q500072",
-    "hts_kor_isnm": "신한 인버스 2X 코스닥 150 선물 ETN",
-    "stck_prpr": "1843",
-    "prdy_ctrt": "-10.32",
-    "acml_vol": "683137"
+    "stck_shrn_iscd": "003830",
+    "hts_kor_isnm": "대한화섬",
+    "stck_prpr": "128900",
+    "prdy_ctrt": "20.24",
+    "acml_vol": "33"
    },
    {
-    "stck_shrn_iscd": "Q520057",
-    "hts_kor_isnm": "미래에셋 인버스 2X 코스닥150 선물 ETN",
-    "stck_prpr": "1812",
-    "prdy_ctrt": "-10.30",
-    "acml_vol": "9128728"
+    "stck_shrn_iscd": "424760",
+    "hts_kor_isnm": "벨로크",
+    "stck_prpr": "2190",
+    "prdy_ctrt": "19.54",
+    "acml_vol": "322252"
    },
    {
-    "stck_shrn_iscd": "007690",
-    "hts_kor_isnm": "국도화학",
-    "stck_prpr": "33000",
-    "prdy_ctrt": "-10.08",
-    "acml_vol": "47941"
+    "stck_shrn_iscd": "45226K",
+    "hts_kor_isnm": "한화갤러리아우",
+    "stck_prpr": "6200",
+    "prdy_ctrt": "19.23",
+    "acml_vol": "1247676"
    },
    {
-    "stck_shrn_iscd": "Q760024",
-    "hts_kor_isnm": "키움 인버스 2X K방산 TOP5 ETN",
-    "stck_prpr": "11435",
-    "prdy_ctrt": "-9.96",
-    "acml_vol": "14133"
+    "stck_shrn_iscd": "354320",
+    "hts_kor_isnm": "알멕",
+    "stck_prpr": "61700",
+    "prdy_ctrt": "19.11",
+    "acml_vol": "418896"
    },
    {
-    "stck_shrn_iscd": "Q570082",
-    "hts_kor_isnm": "한투 인버스2X코스닥150선물 ETN",
-    "stck_prpr": "1838",
-    "prdy_ctrt": "-9.90",
-    "acml_vol": "259126"
+    "stck_shrn_iscd": "336370",
+    "hts_kor_isnm": "솔루스첨단소재",
+    "stck_prpr": "9530",
+    "prdy_ctrt": "18.83",
+    "acml_vol": "864251"
+   },
+   {
+    "stck_shrn_iscd": "106240",
+    "hts_kor_isnm": "파인테크닉스",
+    "stck_prpr": "1306",
+    "prdy_ctrt": "18.08",
+    "acml_vol": "175999"
+   },
+   {
+    "stck_shrn_iscd": "020150",
+    "hts_kor_isnm": "롯데에너지머티리얼즈",
+    "stck_prpr": "57900",
+    "prdy_ctrt": "17.21",
+    "acml_vol": "877034"
+   },
+   {
+    "stck_shrn_iscd": "088280",
+    "hts_kor_isnm": "쏘닉스",
+    "stck_prpr": "4495",
+    "prdy_ctrt": "17.06",
+    "acml_vol": "2468240"
+   },
+   {
+    "stck_shrn_iscd": "004545",
+    "hts_kor_isnm": "깨끗한나라우",
+    "stck_prpr": "4105",
+    "prdy_ctrt": "16.95",
+    "acml_vol": "5146"
+   },
+   {
+    "stck_shrn_iscd": "Q760011",
+    "hts_kor_isnm": "키움 레버리지 2차전지산업 ETN",
+    "stck_prpr": "9615",
+    "prdy_ctrt": "16.55",
+    "acml_vol": "7500"
+   },
+   {
+    "stck_shrn_iscd": "107640",
+    "hts_kor_isnm": "한중엔시에스",
+    "stck_prpr": "48800",
+    "prdy_ctrt": "16.47",
+    "acml_vol": "320025"
+   },
+   {
+    "stck_shrn_iscd": "462330",
+    "hts_kor_isnm": "KODEX 2차전지산업레버리지",
+    "stck_prpr": "1177",
+    "prdy_ctrt": "16.42",
+    "acml_vol": "180288372"
+   },
+   {
+    "stck_shrn_iscd": "900300",
+    "hts_kor_isnm": "오가닉티코스메틱",
+    "stck_prpr": "2905",
+    "prdy_ctrt": "16.20",
+    "acml_vol": "747881"
+   },
+   {
+    "stck_shrn_iscd": "Q530138",
+    "hts_kor_isnm": "삼성 KRX 레버리지 2차전지 TOP10 TR ETN",
+    "stck_prpr": "25960",
+    "prdy_ctrt": "15.89",
+    "acml_vol": "18120"
+   },
+   {
+    "stck_shrn_iscd": "412570",
+    "hts_kor_isnm": "TIGER 2차전지TOP10레버리지",
+    "stck_prpr": "1373",
+    "prdy_ctrt": "15.86",
+    "acml_vol": "18847344"
+   },
+   {
+    "stck_shrn_iscd": "005870",
+    "hts_kor_isnm": "휴니드",
+    "stck_prpr": "4780",
+    "prdy_ctrt": "15.74",
+    "acml_vol": "2888734"
+   },
+   {
+    "stck_shrn_iscd": "373170",
+    "hts_kor_isnm": "엠아이큐브솔루션",
+    "stck_prpr": "1840",
+    "prdy_ctrt": "15.65",
+    "acml_vol": "36759"
+   },
+   {
+    "stck_shrn_iscd": "431190",
+    "hts_kor_isnm": "케이쓰리아이",
+    "stck_prpr": "4670",
+    "prdy_ctrt": "15.31",
+    "acml_vol": "32594"
+   },
+   {
+    "stck_shrn_iscd": "Q580070",
+    "hts_kor_isnm": "KB 레버리지 2차전지 TOP 10 TR ETN",
+    "stck_prpr": "25970",
+    "prdy_ctrt": "14.94",
+    "acml_vol": "12565"
+   },
+   {
+    "stck_shrn_iscd": "450080",
+    "hts_kor_isnm": "에코프로머티",
+    "stck_prpr": "36850",
+    "prdy_ctrt": "14.44",
+    "acml_vol": "585935"
+   },
+   {
+    "stck_shrn_iscd": "009900",
+    "hts_kor_isnm": "명신산업",
+    "stck_prpr": "9640",
+    "prdy_ctrt": "14.08",
+    "acml_vol": "4299080"
+   },
+   {
+    "stck_shrn_iscd": "006110",
+    "hts_kor_isnm": "삼아알미늄",
+    "stck_prpr": "82100",
+    "prdy_ctrt": "13.87",
+    "acml_vol": "497455"
+   }
+  ],
+  "down": [
+   {
+    "stck_shrn_iscd": "290720",
+    "hts_kor_isnm": "푸드나무",
+    "stck_prpr": "2170",
+    "prdy_ctrt": "-30.00",
+    "acml_vol": "409762"
+   },
+   {
+    "stck_shrn_iscd": "015260",
+    "hts_kor_isnm": "에이엔피",
+    "stck_prpr": "300",
+    "prdy_ctrt": "-29.91",
+    "acml_vol": "11308239"
+   },
+   {
+    "stck_shrn_iscd": "020120",
+    "hts_kor_isnm": "키다리스튜디오",
+    "stck_prpr": "5160",
+    "prdy_ctrt": "-15.55",
+    "acml_vol": "3416222"
+   },
+   {
+    "stck_shrn_iscd": "288980",
+    "hts_kor_isnm": "모아데이타",
+    "stck_prpr": "204",
+    "prdy_ctrt": "-14.64",
+    "acml_vol": "10672532"
+   },
+   {
+    "stck_shrn_iscd": "043590",
+    "hts_kor_isnm": "웰킵스하이텍",
+    "stck_prpr": "1900",
+    "prdy_ctrt": "-12.84",
+    "acml_vol": "159107"
+   },
+   {
+    "stck_shrn_iscd": "078350",
+    "hts_kor_isnm": "한양디지텍",
+    "stck_prpr": "34500",
+    "prdy_ctrt": "-11.31",
+    "acml_vol": "598664"
+   },
+   {
+    "stck_shrn_iscd": "001525",
+    "hts_kor_isnm": "동양우",
+    "stck_prpr": "6320",
+    "prdy_ctrt": "-9.97",
+    "acml_vol": "847"
+   },
+   {
+    "stck_shrn_iscd": "060260",
+    "hts_kor_isnm": "뉴보텍",
+    "stck_prpr": "902",
+    "prdy_ctrt": "-9.89",
+    "acml_vol": "314395"
+   },
+   {
+    "stck_shrn_iscd": "061040",
+    "hts_kor_isnm": "알에프텍",
+    "stck_prpr": "6200",
+    "prdy_ctrt": "-9.75",
+    "acml_vol": "59259"
+   },
+   {
+    "stck_shrn_iscd": "250930",
+    "hts_kor_isnm": "예선테크",
+    "stck_prpr": "1463",
+    "prdy_ctrt": "-9.41",
+    "acml_vol": "4991397"
+   },
+   {
+    "stck_shrn_iscd": "079190",
+    "hts_kor_isnm": "케스피온",
+    "stck_prpr": "1555",
+    "prdy_ctrt": "-8.53",
+    "acml_vol": "69699"
+   },
+   {
+    "stck_shrn_iscd": "110020",
+    "hts_kor_isnm": "전진바이오팜",
+    "stck_prpr": "2045",
+    "prdy_ctrt": "-8.50",
+    "acml_vol": "26111"
+   },
+   {
+    "stck_shrn_iscd": "041960",
+    "hts_kor_isnm": "코미팜",
+    "stck_prpr": "9920",
+    "prdy_ctrt": "-8.49",
+    "acml_vol": "522153"
+   },
+   {
+    "stck_shrn_iscd": "270520",
+    "hts_kor_isnm": "앱튼",
+    "stck_prpr": "729",
+    "prdy_ctrt": "-8.42",
+    "acml_vol": "727004"
+   },
+   {
+    "stck_shrn_iscd": "465350",
+    "hts_kor_isnm": "RISE 2차전지TOP10인버스(합성)",
+    "stck_prpr": "14510",
+    "prdy_ctrt": "-8.25",
+    "acml_vol": "302620"
+   },
+   {
+    "stck_shrn_iscd": "011090",
+    "hts_kor_isnm": "에넥스",
+    "stck_prpr": "1748",
+    "prdy_ctrt": "-8.05",
+    "acml_vol": "94909"
+   },
+   {
+    "stck_shrn_iscd": "035620",
+    "hts_kor_isnm": "바른손이앤에이",
+    "stck_prpr": "677",
+    "prdy_ctrt": "-8.02",
+    "acml_vol": "895517"
+   },
+   {
+    "stck_shrn_iscd": "900120",
+    "hts_kor_isnm": "씨엑스아이",
+    "stck_prpr": "3360",
+    "prdy_ctrt": "-7.95",
+    "acml_vol": "26109"
    },
    {
     "stck_shrn_iscd": "Q700035",
     "hts_kor_isnm": "하나 인버스 2X K방산TOP10 ETN",
-    "stck_prpr": "10730",
-    "prdy_ctrt": "-9.68",
-    "acml_vol": "34442"
+    "stck_prpr": "9885",
+    "prdy_ctrt": "-7.88",
+    "acml_vol": "72546"
    },
    {
-    "stck_shrn_iscd": "Q580044",
-    "hts_kor_isnm": "KB 인버스 2X KOSDAQ 150 선물 ETN",
-    "stck_prpr": "1825",
-    "prdy_ctrt": "-9.65",
-    "acml_vol": "323337"
+    "stck_shrn_iscd": "405920",
+    "hts_kor_isnm": "나라셀라",
+    "stck_prpr": "1732",
+    "prdy_ctrt": "-7.87",
+    "acml_vol": "12764"
    },
    {
-    "stck_shrn_iscd": "Q530107",
-    "hts_kor_isnm": "삼성 인버스 2X 코스닥150 선물 ETN",
-    "stck_prpr": "1813",
-    "prdy_ctrt": "-9.58",
-    "acml_vol": "40620956"
+    "stck_shrn_iscd": "256440",
+    "hts_kor_isnm": "ACE MSCI인도네시아(합성)",
+    "stck_prpr": "3745",
+    "prdy_ctrt": "-7.76",
+    "acml_vol": "395857"
    },
    {
-    "stck_shrn_iscd": "Q700036",
-    "hts_kor_isnm": "하나 인버스 2X 반도체 ETN",
-    "stck_prpr": "2515",
-    "prdy_ctrt": "-9.53",
-    "acml_vol": "834234"
+    "stck_shrn_iscd": "317240",
+    "hts_kor_isnm": "TS트릴리온",
+    "stck_prpr": "1164",
+    "prdy_ctrt": "-7.69",
+    "acml_vol": "10486097"
    },
    {
-    "stck_shrn_iscd": "066970",
-    "hts_kor_isnm": "엘앤에프",
-    "stck_prpr": "94900",
-    "prdy_ctrt": "-9.36",
-    "acml_vol": "1044179"
+    "stck_shrn_iscd": "Q500102",
+    "hts_kor_isnm": "신한 블룸버그 2X 천연가스 선물 ETN B",
+    "stck_prpr": "14695",
+    "prdy_ctrt": "-7.69",
+    "acml_vol": "4097"
    },
    {
-    "stck_shrn_iscd": "Q700018",
-    "hts_kor_isnm": "하나 인버스 2X 코스닥150 선물 ETN",
-    "stck_prpr": "1845",
-    "prdy_ctrt": "-8.89",
-    "acml_vol": "296394"
+    "stck_shrn_iscd": "069920",
+    "hts_kor_isnm": "엑시온그룹",
+    "stck_prpr": "1290",
+    "prdy_ctrt": "-7.66",
+    "acml_vol": "227026"
    },
    {
-    "stck_shrn_iscd": "Q520099",
-    "hts_kor_isnm": "미래에셋 인버스 2X 반도체 ETN",
-    "stck_prpr": "3900",
-    "prdy_ctrt": "-8.88",
-    "acml_vol": "6502058"
+    "stck_shrn_iscd": "Q550099",
+    "hts_kor_isnm": "N2 레버리지 천연가스 선물 ETN",
+    "stck_prpr": "9045",
+    "prdy_ctrt": "-7.66",
+    "acml_vol": "2766"
    },
    {
-    "stck_shrn_iscd": "020560",
-    "hts_kor_isnm": "아시아나항공",
-    "stck_prpr": "7160",
-    "prdy_ctrt": "-8.79",
-    "acml_vol": "283382"
+    "stck_shrn_iscd": "101000",
+    "hts_kor_isnm": "KS인더스트리",
+    "stck_prpr": "1101",
+    "prdy_ctrt": "-7.63",
+    "acml_vol": "90674"
    },
    {
-    "stck_shrn_iscd": "Q550098",
-    "hts_kor_isnm": "N2 인버스 2X 코스닥150 선물 ETN",
-    "stck_prpr": "6565",
-    "prdy_ctrt": "-8.18",
-    "acml_vol": "199172"
+    "stck_shrn_iscd": "Q580086",
+    "hts_kor_isnm": "KB 솔랙티브 레버리지 천연가스 선물 ETN",
+    "stck_prpr": "14690",
+    "prdy_ctrt": "-7.61",
+    "acml_vol": "3695"
    },
    {
-    "stck_shrn_iscd": "030960",
-    "hts_kor_isnm": "양지사",
-    "stck_prpr": "5670",
-    "prdy_ctrt": "-8.10",
-    "acml_vol": "3921288"
+    "stck_shrn_iscd": "Q570120",
+    "hts_kor_isnm": "한투 레버리지천연가스선물 ETN C",
+    "stck_prpr": "14725",
+    "prdy_ctrt": "-7.54",
+    "acml_vol": "68170"
    },
    {
-    "stck_shrn_iscd": "056730",
-    "hts_kor_isnm": "CNT85",
-    "stck_prpr": "1102",
-    "prdy_ctrt": "-7.78",
-    "acml_vol": "13600"
+    "stck_shrn_iscd": "Q610095",
+    "hts_kor_isnm": "메리츠 레버리지 천연가스 선물 ETN(H)",
+    "stck_prpr": "8640",
+    "prdy_ctrt": "-7.45",
+    "acml_vol": "55908"
    },
    {
-    "stck_shrn_iscd": "Q760027",
-    "hts_kor_isnm": "키움 인버스 2X 전력 TOP5 ETN",
-    "stck_prpr": "8160",
-    "prdy_ctrt": "-7.38",
-    "acml_vol": "69793"
-   },
-   {
-    "stck_shrn_iscd": "000760",
-    "hts_kor_isnm": "이화산업",
-    "stck_prpr": "11220",
-    "prdy_ctrt": "-7.04",
-    "acml_vol": "1007"
+    "stck_shrn_iscd": "Q530145",
+    "hts_kor_isnm": "삼성 레버리지 천연가스 선물 ETN D",
+    "stck_prpr": "11695",
+    "prdy_ctrt": "-7.37",
+    "acml_vol": "255013"
    }
   ]
  },
  "overseas": {
   "S&P500": {
    "summary": {
-    "ovrs_nmix_prpr": "7659.44",
-    "ovrs_nmix_prdy_vrss": "-84.62",
-    "prdy_ctrt": "-1.09",
+    "ovrs_nmix_prpr": "7690.73",
+    "ovrs_nmix_prdy_vrss": "31.29",
+    "prdy_ctrt": "0.41",
     "hts_kor_isnm": "S&P500"
    },
    "daily": [
+    {
+     "stck_bsop_date": "20261019",
+     "ovrs_nmix_prpr": "7690.73",
+     "ovrs_nmix_oprc": "7702.77",
+     "ovrs_nmix_hgpr": "7731.18",
+     "ovrs_nmix_lwpr": "7684.79"
+    },
     {
      "stck_bsop_date": "20261016",
      "ovrs_nmix_prpr": "7659.44",
@@ -1135,24 +1142,24 @@
      "ovrs_nmix_oprc": "7795.27",
      "ovrs_nmix_hgpr": "7814.15",
      "ovrs_nmix_lwpr": "7786.11"
-    },
-    {
-     "stck_bsop_date": "20261012",
-     "ovrs_nmix_prpr": "7807.24",
-     "ovrs_nmix_oprc": "7813.04",
-     "ovrs_nmix_hgpr": "7821.67",
-     "ovrs_nmix_lwpr": "7796.94"
     }
    ]
   },
   "나스닥종합": {
    "summary": {
-    "ovrs_nmix_prpr": "26140.03",
-    "ovrs_nmix_prdy_vrss": "-573.00",
-    "prdy_ctrt": "-2.15",
+    "ovrs_nmix_prpr": "26430.89",
+    "ovrs_nmix_prdy_vrss": "290.86",
+    "prdy_ctrt": "1.11",
     "hts_kor_isnm": "나스닥 종합"
    },
    "daily": [
+    {
+     "stck_bsop_date": "20261019",
+     "ovrs_nmix_prpr": "26430.89",
+     "ovrs_nmix_oprc": "26395.29",
+     "ovrs_nmix_hgpr": "26613.15",
+     "ovrs_nmix_lwpr": "26344.67"
+    },
     {
      "stck_bsop_date": "20261016",
      "ovrs_nmix_prpr": "26140.03",
@@ -1180,13 +1187,6 @@
      "ovrs_nmix_oprc": "27138.73",
      "ovrs_nmix_hgpr": "27277.88",
      "ovrs_nmix_lwpr": "27116.08"
-    },
-    {
-     "stck_bsop_date": "20261012",
-     "ovrs_nmix_prpr": "27245.90",
-     "ovrs_nmix_oprc": "27352.51",
-     "ovrs_nmix_hgpr": "27376.66",
-     "ovrs_nmix_lwpr": "27219.42"
     }
    ]
   },
@@ -1197,6 +1197,13 @@
     "prdy_ctrt": "0.00"
    },
    "daily": [
+    {
+     "stck_bsop_date": "20261019",
+     "ovrs_nmix_prpr": "51966.03",
+     "ovrs_nmix_oprc": "51978.58",
+     "ovrs_nmix_hgpr": "52134.58",
+     "ovrs_nmix_lwpr": "51863.80"
+    },
     {
      "stck_bsop_date": "20261016",
      "ovrs_nmix_prpr": "52002.41",
@@ -1224,24 +1231,24 @@
      "ovrs_nmix_oprc": "52092.99",
      "ovrs_nmix_hgpr": "52317.32",
      "ovrs_nmix_lwpr": "51587.67"
-    },
-    {
-     "stck_bsop_date": "20261012",
-     "ovrs_nmix_prpr": "51850.55",
-     "ovrs_nmix_oprc": "51765.35",
-     "ovrs_nmix_hgpr": "51928.10",
-     "ovrs_nmix_lwpr": "51718.60"
     }
    ]
   },
   "필라델피아반도체": {
    "summary": {
-    "ovrs_nmix_prpr": "11137.29",
-    "ovrs_nmix_prdy_vrss": "-443.93",
-    "prdy_ctrt": "-3.83",
+    "ovrs_nmix_prpr": "11316.34",
+    "ovrs_nmix_prdy_vrss": "179.05",
+    "prdy_ctrt": "1.61",
     "hts_kor_isnm": "필라델피아 반도체지수"
    },
    "daily": [
+    {
+     "stck_bsop_date": "20261019",
+     "ovrs_nmix_prpr": "11316.34",
+     "ovrs_nmix_oprc": "11466.12",
+     "ovrs_nmix_hgpr": "11550.92",
+     "ovrs_nmix_lwpr": "11293.45"
+    },
     {
      "stck_bsop_date": "20261016",
      "ovrs_nmix_prpr": "11137.29",
@@ -1269,24 +1276,24 @@
      "ovrs_nmix_oprc": "11959.26",
      "ovrs_nmix_hgpr": "12217.21",
      "ovrs_nmix_lwpr": "11861.28"
-    },
-    {
-     "stck_bsop_date": "20261012",
-     "ovrs_nmix_prpr": "12236.79",
-     "ovrs_nmix_oprc": "12361.24",
-     "ovrs_nmix_hgpr": "12378.31",
-     "ovrs_nmix_lwpr": "12216.45"
     }
    ]
   },
   "원/달러 환율": {
    "summary": {
-    "ovrs_nmix_prpr": "1336.5000",
-    "ovrs_nmix_prdy_vrss": "-5.5000",
-    "prdy_ctrt": "-0.41",
+    "ovrs_nmix_prpr": "1333.1000",
+    "ovrs_nmix_prdy_vrss": "-3.4000",
+    "prdy_ctrt": "-0.25",
     "hts_kor_isnm": "원/달러(KMB)"
    },
    "daily": [
+    {
+     "stck_bsop_date": "20261019",
+     "ovrs_nmix_prpr": "1333.1000",
+     "ovrs_nmix_oprc": "1336.0000",
+     "ovrs_nmix_hgpr": "1337.6000",
+     "ovrs_nmix_lwpr": "1327.6000"
+    },
     {
      "stck_bsop_date": "20261016",
      "ovrs_nmix_prpr": "1336.5000",
@@ -1314,793 +1321,930 @@
      "ovrs_nmix_oprc": "1334.0000",
      "ovrs_nmix_hgpr": "1345.8000",
      "ovrs_nmix_lwpr": "1334.0000"
-    },
-    {
-     "stck_bsop_date": "20261012",
-     "ovrs_nmix_prpr": "1335.8000",
-     "ovrs_nmix_oprc": "1342.5000",
-     "ovrs_nmix_hgpr": "1342.5000",
-     "ovrs_nmix_lwpr": "1331.2000"
     }
    ]
   }
  },
  "dart": {
-  "range": "20261016~20261019",
-  "total_count": 646,
-  "filtered_count": 85,
+  "range": "20261017~20261020",
+  "total_count": 481,
+  "filtered_count": 101,
   "filtered": [
    {
-    "date": "20261016",
-    "corp": "삼성전자",
-    "code": "005930",
-    "market": "Y",
-    "report": "주식등의대량보유상황보고서(일반)",
-    "watch": true,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000505"
-   },
-   {
-    "date": "20261016",
+    "date": "20261019",
     "corp": "삼성전자",
     "code": "005930",
     "market": "Y",
     "report": "임원ㆍ주요주주특정증권등소유상황보고서",
     "watch": true,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000492"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000318"
    },
    {
-    "date": "20261016",
-    "corp": "비큐AI",
-    "code": "148780",
+    "date": "20261019",
+    "corp": "해성에어로보틱스",
+    "code": "059270",
     "market": "K",
-    "report": "투자판단관련주요경영사항              ([국책과제 선정] 독자 AI 파운데이션 모델 프로젝트 공동활용 데이터 지원사업(2차))",
+    "report": "소송등의제기ㆍ신청(경영권분쟁소송)              (주주총회 개최금지 등 가처분)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900899"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900683"
    },
    {
-    "date": "20261016",
-    "corp": "CSA 코스믹",
-    "code": "083660",
-    "market": "K",
-    "report": "[기재정정]주요사항보고서(유상증자결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000527"
-   },
-   {
-    "date": "20261016",
-    "corp": "앱코",
-    "code": "129890",
-    "market": "K",
-    "report": "기타시장안내(관리종목지정우려종목)              (주가 1,000원 미달)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900905"
-   },
-   {
-    "date": "20261016",
-    "corp": "SK증권제12호스팩",
-    "code": "473000",
-    "market": "K",
-    "report": "기타시장안내(관리종목지정우려종목)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900831"
-   },
-   {
-    "date": "20261016",
-    "corp": "시선AI",
-    "code": "340810",
+    "date": "20261019",
+    "corp": "리메드",
+    "code": "302550",
     "market": "K",
     "report": "[기재정정]주요사항보고서(전환사채권발행결정)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000522"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000366"
    },
    {
-    "date": "20261016",
-    "corp": "씨씨에스",
-    "code": "066790",
+    "date": "20261019",
+    "corp": "우리기술",
+    "code": "032820",
     "market": "K",
-    "report": "소송등의제기ㆍ신청(경영권분쟁소송)              (증거보전)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900891"
-   },
-   {
-    "date": "20261016",
-    "corp": "고려제강",
-    "code": "002240",
-    "market": "Y",
-    "report": "최대주주등소유주식변동신고서",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800896"
-   },
-   {
-    "date": "20261016",
-    "corp": "삼영이엔씨",
-    "code": "065570",
-    "market": "K",
-    "report": "증권발행결과(자율공시)              (제3자배정 유상증자-출자전환)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900878"
-   },
-   {
-    "date": "20261016",
-    "corp": "삼영이엔씨",
-    "code": "065570",
-    "market": "K",
-    "report": "전환사채(해외전환사채포함)발행후만기전사채취득              (제3회차)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900876"
-   },
-   {
-    "date": "20261016",
-    "corp": "삼영이엔씨",
-    "code": "065570",
-    "market": "K",
-    "report": "최대주주변경",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900874"
-   },
-   {
-    "date": "20261016",
-    "corp": "미래산업",
-    "code": "025560",
-    "market": "Y",
     "report": "[기재정정]단일판매ㆍ공급계약체결",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800872"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900668"
    },
    {
-    "date": "20261016",
-    "corp": "미래산업",
-    "code": "025560",
+    "date": "20261019",
+    "corp": "동원모빌리티",
+    "code": "018500",
     "market": "Y",
-    "report": "[기재정정]단일판매ㆍ공급계약체결",
+    "report": "소송등의제기ㆍ신청(경영권분쟁소송)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800871"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800661"
    },
    {
-    "date": "20261016",
-    "corp": "유안타제16호스팩",
-    "code": "474490",
+    "date": "20261019",
+    "corp": "STX그린로지스",
+    "code": "465770",
+    "market": "Y",
+    "report": "[기재정정]주요사항보고서(자기전환사채만기전취득결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000339"
+   },
+   {
+    "date": "20261019",
+    "corp": "케이씨티",
+    "code": "089150",
     "market": "K",
-    "report": "기타시장안내(관리종목지정우려종목)",
+    "report": "주권매매거래정지              (상장적격성 실질심사 대상 (사유발생))",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900652"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900664"
    },
    {
-    "date": "20261016",
-    "corp": "미래아이앤지",
-    "code": "007120",
+    "date": "20261019",
+    "corp": "삼호개발",
+    "code": "010960",
     "market": "Y",
-    "report": "투자유의안내              (관리종목지정 우려 예고)",
+    "report": "단일판매ㆍ공급계약체결",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800866"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800647"
    },
    {
-    "date": "20261016",
-    "corp": "삼성에스디에스",
-    "code": "018260",
+    "date": "20261019",
+    "corp": "DL",
+    "code": "000210",
+    "market": "Y",
+    "report": "투자판단관련주요경영사항(자회사의 주요경영사항)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800653"
+   },
+   {
+    "date": "20261019",
+    "corp": "제이알글로벌리츠",
+    "code": "348950",
+    "market": "Y",
+    "report": "기타시장안내              (상장폐지 이의신청서 제출)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800634"
+   },
+   {
+    "date": "20261019",
+    "corp": "우성머티리얼스",
+    "code": "011300",
+    "market": "Y",
+    "report": "[기재정정]주요사항보고서(자기전환사채만기전취득결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000337"
+   },
+   {
+    "date": "20261019",
+    "corp": "DL이앤씨",
+    "code": "375500",
+    "market": "Y",
+    "report": "투자판단관련주요경영사항",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800632"
+   },
+   {
+    "date": "20261019",
+    "corp": "엠투엔",
+    "code": "033310",
+    "market": "K",
+    "report": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900627"
+   },
+   {
+    "date": "20261019",
+    "corp": "파이온엑스",
+    "code": "900100",
+    "market": "K",
+    "report": "주권매매거래정지기간변경              (파산신청)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900622"
+   },
+   {
+    "date": "20261019",
+    "corp": "모아데이타",
+    "code": "288980",
+    "market": "K",
+    "report": "[기재정정]주요사항보고서(유상증자결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000333"
+   },
+   {
+    "date": "20261019",
+    "corp": "티와이홀딩스",
+    "code": "363280",
+    "market": "Y",
+    "report": "투자판단관련주요경영사항(자회사의 주요경영사항)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800621"
+   },
+   {
+    "date": "20261019",
+    "corp": "대호에이엘",
+    "code": "069460",
+    "market": "Y",
+    "report": "소송등의제기ㆍ신청(경영권분쟁소송)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800615"
+   },
+   {
+    "date": "20261019",
+    "corp": "알테오젠",
+    "code": "196170",
+    "market": "K",
+    "report": "[기재정정]증권신고서(합병)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000334"
+   },
+   {
+    "date": "20261019",
+    "corp": "태영건설",
+    "code": "009410",
+    "market": "Y",
+    "report": "투자판단관련주요경영사항",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800607"
+   },
+   {
+    "date": "20261019",
+    "corp": "우성",
+    "code": "006980",
+    "market": "Y",
+    "report": "[기재정정]주요사항보고서(회사합병결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000317"
+   },
+   {
+    "date": "20261019",
+    "corp": "삼성전기",
+    "code": "009150",
+    "market": "Y",
+    "report": "단일판매ㆍ공급계약체결",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800610"
+   },
+   {
+    "date": "20261019",
+    "corp": "LS증권",
+    "code": "078020",
+    "market": "K",
+    "report": "소송등의판결ㆍ결정(자율공시:일정금액미만의청구)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900613"
+   },
+   {
+    "date": "20261019",
+    "corp": "파이온엑스",
+    "code": "900100",
+    "market": "K",
+    "report": "[기재정정]주요사항보고서(유상증자결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000322"
+   },
+   {
+    "date": "20261019",
+    "corp": "디와이에이",
+    "code": "002880",
+    "market": "Y",
+    "report": "전환가액ㆍ신주인수권행사가액ㆍ교환가액의조정(안내공시)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800601"
+   },
+   {
+    "date": "20261019",
+    "corp": "에이전트AI",
+    "code": "060900",
+    "market": "K",
+    "report": "주요사항보고서(자기전환사채만기전취득결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000297"
+   },
+   {
+    "date": "20261019",
+    "corp": "현대로템",
+    "code": "064350",
+    "market": "Y",
+    "report": "주요사항보고서(자기주식취득결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000305"
+   },
+   {
+    "date": "20261019",
+    "corp": "동신건설",
+    "code": "025950",
+    "market": "K",
+    "report": "단일판매ㆍ공급계약체결",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900531"
+   },
+   {
+    "date": "20261019",
+    "corp": "삼영이엔씨",
+    "code": "065570",
+    "market": "K",
+    "report": "감자완료",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900525"
+   },
+   {
+    "date": "20261019",
+    "corp": "DH오토넥스",
+    "code": "000300",
+    "market": "Y",
+    "report": "주요사항보고서(회사합병결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000292"
+   },
+   {
+    "date": "20261019",
+    "corp": "금호에이치티",
+    "code": "214330",
     "market": "Y",
     "report": "최대주주등소유주식변동신고서",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800882"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800559"
    },
    {
-    "date": "20261016",
-    "corp": "CSA 코스믹",
-    "code": "083660",
+    "date": "20261019",
+    "corp": "모아라이프플러스",
+    "code": "142760",
     "market": "K",
-    "report": "주요사항보고서(유상증자결정)",
+    "report": "[기재정정]주요사항보고서(유상증자결정)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000491"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000262"
    },
    {
-    "date": "20261016",
-    "corp": "큐리언트",
-    "code": "115180",
-    "market": "K",
-    "report": "권리락              (유상증자)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900860"
-   },
-   {
-    "date": "20261016",
-    "corp": "아리바이오LAB",
-    "code": "261780",
-    "market": "K",
-    "report": "주요사항보고서(자기전환사채매도결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000480"
-   },
-   {
-    "date": "20261016",
-    "corp": "대림통상",
-    "code": "006570",
-    "market": "Y",
-    "report": "최대주주등소유주식변동신고서",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800845"
-   },
-   {
-    "date": "20261016",
+    "date": "20261019",
     "corp": "동아지질",
     "code": "028100",
     "market": "Y",
     "report": "[기재정정]단일판매ㆍ공급계약체결",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800813"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800483"
    },
    {
-    "date": "20261016",
-    "corp": "동일산업",
-    "code": "004890",
-    "market": "Y",
-    "report": "최대주주변경",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800821"
-   },
-   {
-    "date": "20261016",
-    "corp": "우성머티리얼스",
-    "code": "011300",
-    "market": "Y",
-    "report": "[기재정정]주요사항보고서(신주인수권부사채권발행결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000464"
-   },
-   {
-    "date": "20261016",
-    "corp": "우성머티리얼스",
-    "code": "011300",
-    "market": "Y",
-    "report": "[기재정정]주요사항보고서(유상증자결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000451"
-   },
-   {
-    "date": "20261016",
-    "corp": "아스타",
-    "code": "246720",
+    "date": "20261019",
+    "corp": "옴니시스템",
+    "code": "057540",
     "market": "K",
-    "report": "최대주주변경을수반하는주식양수도계약해제ㆍ취소등",
+    "report": "주권매매거래정지해제              (액면병합 주권 변경상장)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900765"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900447"
    },
    {
-    "date": "20261016",
-    "corp": "베노티앤알",
-    "code": "206400",
+    "date": "20261019",
+    "corp": "DH오토리드",
+    "code": "290120",
     "market": "K",
-    "report": "[기재정정]주요사항보고서(유상증자결정)",
+    "report": "회사합병결정(종속회사의주요경영사항)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000414"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900493"
    },
    {
-    "date": "20261016",
-    "corp": "효성",
-    "code": "004800",
-    "market": "Y",
-    "report": "단일판매ㆍ공급계약체결(자회사의 주요경영사항)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800780"
-   },
-   {
-    "date": "20261016",
-    "corp": "동일산업",
-    "code": "004890",
-    "market": "Y",
-    "report": "최대주주등소유주식변동신고서(최대주주변경시)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800790"
-   },
-   {
-    "date": "20261016",
-    "corp": "본느",
-    "code": "226340",
+    "date": "20261019",
+    "corp": "꿈비",
+    "code": "407400",
     "market": "K",
-    "report": "주요사항보고서(소송등의제기)",
+    "report": "전환사채(해외전환사채포함)발행후만기전사채취득",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000436"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900486"
    },
    {
-    "date": "20261016",
-    "corp": "현대엘리베이터",
-    "code": "017800",
-    "market": "Y",
-    "report": "주요사항보고서(자기주식처분결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000390"
-   },
-   {
-    "date": "20261016",
-    "corp": "알엔투테크놀로지",
-    "code": "148250",
+    "date": "20261019",
+    "corp": "젬백스",
+    "code": "082270",
     "market": "K",
-    "report": "주요사항보고서(자기전환사채만기전취득결정)",
+    "report": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000410"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900433"
    },
    {
-    "date": "20261016",
-    "corp": "GS",
-    "code": "078930",
+    "date": "20261019",
+    "corp": "GC메디아이",
+    "code": "032620",
+    "market": "K",
+    "report": "최대주주변경을수반하는주식담보제공계약체결",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900446"
+   },
+   {
+    "date": "20261019",
+    "corp": "NH투자증권",
+    "code": "005940",
     "market": "Y",
     "report": "최대주주등소유주식변동신고서",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800734"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800458"
    },
    {
-    "date": "20261016",
-    "corp": "대원",
-    "code": "007680",
-    "market": "K",
-    "report": "주요사항보고서(회사합병결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000409"
-   },
-   {
-    "date": "20261016",
-    "corp": "제넥신",
-    "code": "095700",
-    "market": "K",
-    "report": "주요사항보고서(유상증자결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000373"
-   },
-   {
-    "date": "20261016",
-    "corp": "DL",
-    "code": "000210",
+    "date": "20261019",
+    "corp": "HD한국조선해양",
+    "code": "009540",
     "market": "Y",
-    "report": "조회공시요구(풍문또는보도)에대한답변(미확정)",
+    "report": "영업(잠정)실적(공정공시)(자회사의 주요경영사항)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800613"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800441"
    },
    {
-    "date": "20261016",
-    "corp": "모아라이프플러스",
-    "code": "142760",
-    "market": "K",
-    "report": "[기재정정]주요사항보고서(전환사채권발행결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000334"
-   },
-   {
-    "date": "20261016",
-    "corp": "신영증권",
-    "code": "001720",
+    "date": "20261019",
+    "corp": "대신증권",
+    "code": "003540",
     "market": "Y",
     "report": "최대주주등소유주식변동신고서",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800634"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800449"
    },
    {
-    "date": "20261016",
-    "corp": "본느",
-    "code": "226340",
-    "market": "K",
-    "report": "주요사항보고서(자기주식취득신탁계약해지결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000322"
-   },
-   {
-    "date": "20261016",
-    "corp": "IBKS제24호스팩",
-    "code": "469480",
-    "market": "K",
-    "report": "[기재정정]주요사항보고서(회사합병결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000296"
-   },
-   {
-    "date": "20261016",
-    "corp": "프리티",
-    "code": "006490",
+    "date": "20261019",
+    "corp": "HD한국조선해양",
+    "code": "009540",
     "market": "Y",
-    "report": "[기재정정]주요사항보고서(감자결정)",
+    "report": "영업(잠정)실적(공정공시)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000287"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800444"
    },
    {
-    "date": "20261016",
-    "corp": "한화플러스제5호스팩",
-    "code": "498390",
-    "market": "K",
-    "report": "[기재정정]주요사항보고서(회사합병결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000273"
-   },
-   {
-    "date": "20261016",
-    "corp": "한화시스템",
-    "code": "272210",
+    "date": "20261019",
+    "corp": "HD현대중공업",
+    "code": "329180",
     "market": "Y",
-    "report": "조회공시요구(풍문또는보도)에대한답변(미확정)",
+    "report": "영업(잠정)실적(공정공시)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800541"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800435"
    },
    {
-    "date": "20261016",
-    "corp": "영화금속",
-    "code": "012280",
-    "market": "Y",
-    "report": "최대주주등소유주식변동신고서",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800557"
-   },
-   {
-    "date": "20261016",
-    "corp": "제이케이시냅스",
-    "code": "060230",
+    "date": "20261019",
+    "corp": "나인앤컴퍼니",
+    "code": "366030",
     "market": "K",
-    "report": "증권발행결과(자율공시)              (일반공모 유상증자)",
+    "report": "[기재정정]최대주주변경을수반하는주식담보제공계약체결",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900520"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900401"
    },
    {
-    "date": "20261016",
-    "corp": "우성머티리얼스",
-    "code": "011300",
-    "market": "Y",
-    "report": "소송등의제기ㆍ신청(경영권분쟁소송)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800517"
-   },
-   {
-    "date": "20261016",
-    "corp": "씨이랩",
-    "code": "189330",
+    "date": "20261019",
+    "corp": "에스트래픽",
+    "code": "234300",
     "market": "K",
-    "report": "단일판매ㆍ공급계약체결",
+    "report": "[기재정정]단일판매ㆍ공급계약체결(자율공시)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900510"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900375"
    },
    {
-    "date": "20261016",
-    "corp": "케이엠더블유",
-    "code": "032500",
-    "market": "K",
-    "report": "주요사항보고서(전환사채권발행결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000208"
-   },
-   {
-    "date": "20261016",
-    "corp": "이연제약",
-    "code": "102460",
-    "market": "Y",
-    "report": "전환가액ㆍ신주인수권행사가액ㆍ교환가액의조정(안내공시)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800511"
-   },
-   {
-    "date": "20261016",
-    "corp": "이엠앤아이",
-    "code": "083470",
-    "market": "K",
-    "report": "조회공시요구(현저한시황변동)에대한답변(미확정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900488"
-   },
-   {
-    "date": "20261016",
-    "corp": "제이티",
-    "code": "089790",
-    "market": "K",
-    "report": "단일판매ㆍ공급계약체결",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900466"
-   },
-   {
-    "date": "20261016",
-    "corp": "시지트로닉스",
-    "code": "429270",
-    "market": "K",
-    "report": "기타주요경영사항              (일반공모증자(소액공모) 유상증자 결정 철회)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900461"
-   },
-   {
-    "date": "20261016",
-    "corp": "시지트로닉스",
-    "code": "429270",
-    "market": "K",
-    "report": "[기재정정]주요사항보고서(유상증자결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000204"
-   },
-   {
-    "date": "20261016",
-    "corp": "국도화학",
-    "code": "007690",
-    "market": "Y",
-    "report": "연결재무제표기준영업(잠정)실적(공정공시)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800456"
-   },
-   {
-    "date": "20261016",
-    "corp": "이연제약",
-    "code": "102460",
-    "market": "Y",
-    "report": "유상증자또는주식관련사채등의발행결과(자율공시)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800473"
-   },
-   {
-    "date": "20261016",
-    "corp": "노머스",
-    "code": "473980",
-    "market": "K",
-    "report": "주요사항보고서(자기주식취득신탁계약체결결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000168"
-   },
-   {
-    "date": "20261016",
-    "corp": "하이젠알앤엠",
-    "code": "160190",
-    "market": "K",
-    "report": "주요사항보고서(자기주식처분결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000151"
-   },
-   {
-    "date": "20261016",
-    "corp": "케어랩스",
-    "code": "263700",
-    "market": "K",
-    "report": "[첨부정정]주요사항보고서(회사합병결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000127"
-   },
-   {
-    "date": "20261016",
-    "corp": "솔디펜스",
-    "code": "215090",
-    "market": "K",
-    "report": "단일판매ㆍ공급계약체결",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900411"
-   },
-   {
-    "date": "20261016",
-    "corp": "피에이치에이",
-    "code": "043370",
-    "market": "K",
-    "report": "주요사항보고서(자기주식취득신탁계약체결결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000143"
-   },
-   {
-    "date": "20261016",
-    "corp": "진시스템",
-    "code": "363250",
-    "market": "K",
-    "report": "[첨부정정]주요사항보고서(회사합병결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000130"
-   },
-   {
-    "date": "20261016",
-    "corp": "엔알비",
-    "code": "475230",
-    "market": "K",
-    "report": "단일판매ㆍ공급계약체결",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900371"
-   },
-   {
-    "date": "20261016",
-    "corp": "지엠비코리아",
-    "code": "013870",
-    "market": "Y",
-    "report": "최대주주등소유주식변동신고서",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800372"
-   },
-   {
-    "date": "20261016",
-    "corp": "동아제약",
-    "code": "000640",
-    "market": "Y",
-    "report": "단일판매ㆍ공급계약체결(자회사의 주요경영사항)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800364"
-   },
-   {
-    "date": "20261016",
-    "corp": "대우건설",
-    "code": "047040",
-    "market": "Y",
-    "report": "단일판매ㆍ공급계약체결",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800313"
-   },
-   {
-    "date": "20261016",
-    "corp": "큐리언트",
-    "code": "115180",
-    "market": "K",
-    "report": "유상증자1차발행가액결정",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900326"
-   },
-   {
-    "date": "20261016",
-    "corp": "큐리언트",
-    "code": "115180",
-    "market": "K",
-    "report": "[기재정정]주요사항보고서(유상증자결정)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000096"
-   },
-   {
-    "date": "20261016",
-    "corp": "SK디앤디",
-    "code": "210980",
-    "market": "Y",
-    "report": "최대주주등소유주식변동신고서",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800302"
-   },
-   {
-    "date": "20261016",
-    "corp": "위드텍",
-    "code": "348350",
-    "market": "K",
-    "report": "단일판매ㆍ공급계약체결(자율공시)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900246"
-   },
-   {
-    "date": "20261016",
-    "corp": "쎄노텍",
-    "code": "222420",
-    "market": "K",
-    "report": "단일판매ㆍ공급계약체결",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900256"
-   },
-   {
-    "date": "20261016",
-    "corp": "한섬",
-    "code": "020000",
-    "market": "Y",
-    "report": "최대주주등소유주식변동신고서",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800210"
-   },
-   {
-    "date": "20261016",
-    "corp": "엘앤씨바이오",
-    "code": "290650",
-    "market": "K",
-    "report": "유상증자또는주식관련사채등의청약결과(자율공시)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900207"
-   },
-   {
-    "date": "20261016",
-    "corp": "글로본",
-    "code": "019660",
+    "date": "20261019",
+    "corp": "에스트래픽",
+    "code": "234300",
     "market": "K",
     "report": "[기재정정]단일판매ㆍ공급계약체결",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016900001"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900370"
    },
    {
-    "date": "20261016",
-    "corp": "모아데이타",
-    "code": "288980",
+    "date": "20261019",
+    "corp": "한울소재과학",
+    "code": "091440",
     "market": "K",
-    "report": "[기재정정]주요사항보고서(자기전환사채만기전취득결정)",
+    "report": "[기재정정]주요사항보고서(신주인수권부사채권발행결정)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000442"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000213"
    },
    {
-    "date": "20261016",
-    "corp": "세븐브로이맥주",
-    "code": "267080",
-    "market": "N",
-    "report": "기타시장안내              (개선기간 종료에 따른 상장폐지 여부 결정 안내)",
-    "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016600834"
-   },
-   {
-    "date": "20261016",
-    "corp": "지앤이헬스케어",
-    "code": "299480",
-    "market": "N",
+    "date": "20261019",
+    "corp": "IPARK현대산업개발",
+    "code": "294870",
+    "market": "Y",
     "report": "자기주식취득결과보고서",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000456"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000214"
    },
    {
-    "date": "20261016",
-    "corp": "에코비트",
-    "code": "",
-    "market": "E",
-    "report": "주요사항보고서(유상증자결정)",
+    "date": "20261019",
+    "corp": "지투지바이오",
+    "code": "456160",
+    "market": "K",
+    "report": "투자판단관련주요경영사항              (약효지속성 주사제 개발관련 플랫폼평가 계약 체결)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000419"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900400"
    },
    {
-    "date": "20261016",
-    "corp": "송우인포텍",
-    "code": "0203K0",
-    "market": "N",
+    "date": "20261019",
+    "corp": "대원",
+    "code": "007680",
+    "market": "K",
+    "report": "[첨부정정]주요사항보고서(회사합병결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000206"
+   },
+   {
+    "date": "20261019",
+    "corp": "디바이스",
+    "code": "187870",
+    "market": "K",
     "report": "[기재정정]단일판매ㆍ공급계약체결(자율공시)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016600621"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900379"
    },
    {
-    "date": "20261016",
-    "corp": "럭스코",
-    "code": "",
-    "market": "E",
-    "report": "[기재정정]증권신고서(합병)",
+    "date": "20261019",
+    "corp": "에코프로비엠",
+    "code": "247540",
+    "market": "K",
+    "report": "유상증자또는주식관련사채등의청약결과(자율공시)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000353"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900366"
    },
    {
-    "date": "20261016",
-    "corp": "탈리다쿰",
-    "code": "",
-    "market": "E",
-    "report": "유상증자결정",
+    "date": "20261019",
+    "corp": "기가비스",
+    "code": "420770",
+    "market": "K",
+    "report": "[기재정정]단일판매ㆍ공급계약체결",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000325"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900334"
    },
    {
-    "date": "20261016",
-    "corp": "탈리다쿰",
-    "code": "",
-    "market": "E",
-    "report": "유상증자결정",
+    "date": "20261019",
+    "corp": "미래산업",
+    "code": "025560",
+    "market": "Y",
+    "report": "[기재정정]단일판매ㆍ공급계약체결",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000292"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800316"
    },
    {
-    "date": "20261016",
-    "corp": "솔리스",
-    "code": "",
-    "market": "E",
-    "report": "[기재정정]증권신고서(합병)",
+    "date": "20261019",
+    "corp": "비나텍",
+    "code": "126340",
+    "market": "K",
+    "report": "단일판매ㆍ공급계약체결",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000278"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900317"
    },
    {
-    "date": "20261016",
-    "corp": "탈리다쿰",
-    "code": "",
-    "market": "E",
-    "report": "특수관계인의유상증자참여",
+    "date": "20261019",
+    "corp": "비나텍",
+    "code": "126340",
+    "market": "K",
+    "report": "주권매매거래정지              (단일판매공급계약)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000277"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900330"
    },
    {
-    "date": "20261016",
-    "corp": "리딩투자증권",
-    "code": "",
-    "market": "E",
+    "date": "20261019",
+    "corp": "디오",
+    "code": "039840",
+    "market": "K",
     "report": "주요사항보고서(자기주식취득결정)",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000154"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000160"
    },
    {
-    "date": "20261016",
-    "corp": "피엘에스",
+    "date": "20261019",
+    "corp": "삼립",
+    "code": "005610",
+    "market": "Y",
+    "report": "최대주주등소유주식변동신고서",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800308"
+   },
+   {
+    "date": "20261019",
+    "corp": "MSDI",
+    "code": "123010",
+    "market": "K",
+    "report": "[기재정정]주요사항보고서(유상증자결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000120"
+   },
+   {
+    "date": "20261019",
+    "corp": "삼천리자전거",
+    "code": "024950",
+    "market": "K",
+    "report": "주요사항보고서(자기주식취득신탁계약체결결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000137"
+   },
+   {
+    "date": "20261019",
+    "corp": "빅텍",
+    "code": "065450",
+    "market": "K",
+    "report": "단일판매ㆍ공급계약체결(자율공시)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900271"
+   },
+   {
+    "date": "20261019",
+    "corp": "스피어",
+    "code": "347700",
+    "market": "K",
+    "report": "[기재정정]단일판매ㆍ공급계약체결",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900272"
+   },
+   {
+    "date": "20261019",
+    "corp": "금호건설",
+    "code": "002990",
+    "market": "Y",
+    "report": "[기재정정]단일판매ㆍ공급계약체결",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800267"
+   },
+   {
+    "date": "20261019",
+    "corp": "빅텍",
+    "code": "065450",
+    "market": "K",
+    "report": "전환사채(해외전환사채포함)발행후만기전사채취득",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900269"
+   },
+   {
+    "date": "20261019",
+    "corp": "한울반도체",
+    "code": "320000",
+    "market": "K",
+    "report": "유상증자또는주식관련사채등의청약결과(자율공시)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900249"
+   },
+   {
+    "date": "20261019",
+    "corp": "모나용평",
+    "code": "070960",
+    "market": "Y",
+    "report": "최대주주등소유주식변동신고서",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800264"
+   },
+   {
+    "date": "20261019",
+    "corp": "엔케이",
+    "code": "085310",
+    "market": "Y",
+    "report": "주요사항보고서(자기주식취득신탁계약체결결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000094"
+   },
+   {
+    "date": "20261019",
+    "corp": "오픈놀",
+    "code": "440320",
+    "market": "K",
+    "report": "전환사채(해외전환사채포함)발행후만기전사채취득",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900225"
+   },
+   {
+    "date": "20261019",
+    "corp": "현대로템",
+    "code": "064350",
+    "market": "Y",
+    "report": "연결재무제표기준영업(잠정)실적(공정공시)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800217"
+   },
+   {
+    "date": "20261019",
+    "corp": "영흥",
+    "code": "012160",
+    "market": "Y",
+    "report": "최대주주등소유주식변동신고서",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800220"
+   },
+   {
+    "date": "20261019",
+    "corp": "세나테크놀로지",
+    "code": "061090",
+    "market": "K",
+    "report": "주요사항보고서(자기주식취득신탁계약체결결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000081"
+   },
+   {
+    "date": "20261019",
+    "corp": "메드팩토",
+    "code": "235980",
+    "market": "K",
+    "report": "투자판단관련주요경영사항(임상시험계획변경승인)              (재발성, 불응성 또는 진행성 골육종 환자 대상 백토서팁 단독 요법 제1/2상 임상시험계획(IND) 미국 식품의약국(FDA) 변경 승인)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900196"
+   },
+   {
+    "date": "20261019",
+    "corp": "현대건설",
+    "code": "000720",
+    "market": "Y",
+    "report": "투자판단관련주요경영사항",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800197"
+   },
+   {
+    "date": "20261019",
+    "corp": "실리콘투",
+    "code": "257720",
+    "market": "K",
+    "report": "주요사항보고서(자기주식취득신탁계약체결결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000068"
+   },
+   {
+    "date": "20261019",
+    "corp": "파두",
+    "code": "440110",
+    "market": "K",
+    "report": "연결재무제표기준영업(잠정)실적(공정공시)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900192"
+   },
+   {
+    "date": "20261019",
+    "corp": "신성이엔지",
+    "code": "011930",
+    "market": "Y",
+    "report": "최대주주등소유주식변동신고서",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800202"
+   },
+   {
+    "date": "20261019",
+    "corp": "휴니드테크놀러지스",
+    "code": "005870",
+    "market": "Y",
+    "report": "단일판매ㆍ공급계약체결",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800189"
+   },
+   {
+    "date": "20261019",
+    "corp": "비아트론",
+    "code": "141000",
+    "market": "K",
+    "report": "[기재정정]단일판매ㆍ공급계약체결",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900182"
+   },
+   {
+    "date": "20261019",
+    "corp": "진도",
+    "code": "088790",
+    "market": "Y",
+    "report": "최대주주등소유주식변동신고서",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800186"
+   },
+   {
+    "date": "20261019",
+    "corp": "엔케이",
+    "code": "085310",
+    "market": "Y",
+    "report": "주요사항보고서(자기주식취득신탁계약해지결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000058"
+   },
+   {
+    "date": "20261019",
+    "corp": "대원전선",
+    "code": "006340",
+    "market": "Y",
+    "report": "최대주주등소유주식변동신고서",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800170"
+   },
+   {
+    "date": "20261019",
+    "corp": "가온전선",
+    "code": "000500",
+    "market": "Y",
+    "report": "연결재무제표기준영업(잠정)실적(공정공시)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800156"
+   },
+   {
+    "date": "20261019",
+    "corp": "인벤테라",
+    "code": "0007J0",
+    "market": "K",
+    "report": "투자판단관련주요경영사항(임상시험계획승인신청등결정)              (자기공명 췌담관조영술(MRCP) 특화 조영제 INV003액의 미국 FDA 제1상 임상시험계획(IND) 승인)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900151"
+   },
+   {
+    "date": "20261019",
+    "corp": "웨이버스",
+    "code": "336060",
+    "market": "K",
+    "report": "주요사항보고서(자기주식취득결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000035"
+   },
+   {
+    "date": "20261019",
+    "corp": "삼성출판사",
+    "code": "068290",
+    "market": "Y",
+    "report": "최대주주등소유주식변동신고서",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800153"
+   },
+   {
+    "date": "20261019",
+    "corp": "현대위아",
+    "code": "011210",
+    "market": "Y",
+    "report": "매매거래정지및정지해제(중요내용공시)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800141"
+   },
+   {
+    "date": "20261019",
+    "corp": "일성건설",
+    "code": "013360",
+    "market": "Y",
+    "report": "[기재정정]단일판매ㆍ공급계약체결",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800131"
+   },
+   {
+    "date": "20261019",
+    "corp": "한익스프레스",
+    "code": "014130",
+    "market": "Y",
+    "report": "자기주식취득결과보고서",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000026"
+   },
+   {
+    "date": "20261019",
+    "corp": "캠시스",
+    "code": "050110",
+    "market": "K",
+    "report": "연결재무제표기준영업(잠정)실적(공정공시)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900129"
+   },
+   {
+    "date": "20261019",
+    "corp": "티앤알바이오팹",
+    "code": "246710",
+    "market": "K",
+    "report": "연결재무제표기준영업(잠정)실적(공정공시)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019900118"
+   },
+   {
+    "date": "20261019",
+    "corp": "S-Oil",
+    "code": "010950",
+    "market": "Y",
+    "report": "[기재정정]단일판매ㆍ공급계약체결",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800117"
+   },
+   {
+    "date": "20261019",
+    "corp": "S-Oil",
+    "code": "010950",
+    "market": "Y",
+    "report": "[기재정정]단일판매ㆍ공급계약체결",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800110"
+   },
+   {
+    "date": "20261019",
+    "corp": "LS",
+    "code": "006260",
+    "market": "Y",
+    "report": "단일판매ㆍ공급계약체결(자회사의 주요경영사항)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800111"
+   },
+   {
+    "date": "20261019",
+    "corp": "엘에스일렉트릭",
+    "code": "010120",
+    "market": "Y",
+    "report": "단일판매ㆍ공급계약체결",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800108"
+   },
+   {
+    "date": "20261019",
+    "corp": "자이에스앤디",
+    "code": "317400",
+    "market": "Y",
+    "report": "투자판단관련주요경영사항",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800099"
+   },
+   {
+    "date": "20261019",
+    "corp": "삼성물산",
+    "code": "028260",
+    "market": "Y",
+    "report": "투자판단관련주요경영사항",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019800001"
+   },
+   {
+    "date": "20261019",
+    "corp": "마뗑킴",
     "code": "",
     "market": "E",
-    "report": "최대주주등의주식보유변동",
+    "report": "회사합병결정",
     "watch": false,
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016000057"
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000351"
+   },
+   {
+    "date": "20261019",
+    "corp": "하고하우스",
+    "code": "",
+    "market": "E",
+    "report": "회사합병결정",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000346"
+   },
+   {
+    "date": "20261019",
+    "corp": "사운드백신",
+    "code": "",
+    "market": "E",
+    "report": "[기재정정]주요사항보고서(전환사채권발행결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000218"
+   },
+   {
+    "date": "20261019",
+    "corp": "토스플레이스",
+    "code": "",
+    "market": "E",
+    "report": "유상증자결정",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000205"
+   },
+   {
+    "date": "20261019",
+    "corp": "대선조선",
+    "code": "031990",
+    "market": "E",
+    "report": "[기재정정]주요사항보고서(소송등의제기)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000204"
+   },
+   {
+    "date": "20261020",
+    "corp": "엘에이티",
+    "code": "311060",
+    "market": "N",
+    "report": "[기재정정]주요사항보고서(유상증자결정)",
+    "watch": false,
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000369"
    }
   ]
  },
  "prev_close_source": {
   "file": "latest_evening.json",
-  "generated_at": "2026-10-16T16:20+09:00",
-  "trade_date": "20261016",
+  "generated_at": "2026-10-19T16:20+09:00",
+  "trade_date": "20261019",
   "note": "장전 수집이라 한투가 등락률을 0.00으로 줌 → indices·ranking·watch.quote는 직전 거래일 장마감(KRX 정규장) 수집값으로 교체됨. watch.daily의 직전일 종가는 장후 거래(NXT 등)가 반영돼 정규장 종가와 다를 수 있으니, 직전일 종가·등락률은 quote를 기준으로 쓸 것."
  },
  "errors": []
